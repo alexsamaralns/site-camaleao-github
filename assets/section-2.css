@@ -82,6 +82,10 @@
   color: #000!important;
 }
 
+.btn-section-2:hover h3 {
+  color: #000!important;
+}
+
 .right-space {
   height: 20rem;
   width: 31.2rem;
