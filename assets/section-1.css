@@ -270,7 +270,7 @@
 @media (max-width: 990px) {
 
   .content-section-1 {
-    background-image: url(/assets/img/fundo1mobile.png)!important;
+    background-image: url(../assets/img/fundo1mobile.png)!important;
   }
 
   .row-content {
