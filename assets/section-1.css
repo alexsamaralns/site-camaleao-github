@@ -1,0 +1,312 @@
+.section-1 {
+  height: 41rem;
+}
+
+.content-section-1 {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/assets/img/fundo1.png);
+  background-repeat: no-repeat;
+}
+
+.row-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.left-content {
+  margin: 7rem 0 0 3rem;
+}
+
+.info-section-1 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: -.3rem;
+}
+
+.last-line-info-section-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lastword-info-section-1 {
+  color: var(--primary-color);
+  font-size: 4rem;
+  font-weight: bolder;
+  margin: -2.3rem 0 0 3rem;
+}
+
+.right-info-content {
+  margin: 3rem 10rem 0 0;
+  text-align: right;
+}
+
+.right-info-section-1 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: -.3rem;
+}
+
+.right-last-line-info-section-1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+
+.last-line-right-info-section-1 {
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 15rem;
+  height: 2.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  padding-top: .3rem;
+  transition: .6s;
+}
+
+.last-line-right-info-section-1:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: var(--primary-color);
+}
+
+/*------------------------------------------*/
+/*   VIDEO INTRO
+/*------------------------------------------*/
+
+.video-place {
+  margin: 7rem 5rem 0 0;
+}
+
+.intro-video {
+  width: 25rem;
+  height: 16rem;
+  border-radius: 20px;
+  z-index: 1;
+  box-shadow: 4px 4px 9px 0px rgba(0,0,0,0.75);
+  transition: .5s;
+}
+
+.video-fixed {
+  height: 220px!important;
+  width: 360px!important;
+  position: fixed!important;
+  bottom: 70px;
+  right: 20px;
+}
+
+.hide-close-btn {
+  display: none;
+}
+
+.close-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  font-size: .7rem;
+  font-weight: 600;
+  border-radius: 50%;
+  position: fixed!important;
+  background-color: rgba(59, 59, 59, 0.61);
+  color: #fff;
+  bottom: 295px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 999999999;
+}
+
+/*------------------------------------------*/
+/*   VIDEO POPUP LINK
+/*------------------------------------------*/
+
+.modal-video {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 2.5rem;
+  position: relative;
+}
+
+.modal-video a .svg-inline--fa {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-right: 5px;
+  top: 7px;
+  position: relative;
+}
+
+.modal-video a {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.modal-video span {
+  color: #999;
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: none;
+  position: absolute;
+  top: 32px;
+  left: 52px;
+}
+
+/*------------------------------------------*/
+/*   VIDEO POPUP ICON
+/*------------------------------------------*/
+
+.video-preview {
+  position: relative;
+}
+
+.video-btn {
+  display: inline-block;
+}
+
+.video-block {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+/*------------------------------------------*/
+/*  Video Button Icon
+/*------------------------------------------*/
+
+.video-btn {
+  width: 100px;
+  height: 100px;
+  position: absolute!important;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  background-color: transparent;
+  color: #fff;
+  line-height: 90px!important;
+  border: 4px solid transparent;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+#video-1 .video-btn {
+  position: relative!important;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+}
+
+.video-btn .svg-inline--fa {
+  font-size: 3rem;
+  line-height: 100px!important;
+  margin-left: 10px;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.video-btn:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.video-btn:hover .svg-inline--fa {
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.video-btn:hover:before {
+  opacity: .75;
+  left: -25px;
+  right: -25px;
+  top: -25px;
+  bottom: -25px;
+}
+
+/*------------------------------------------*/
+/*  Video Icon Color
+/*------------------------------------------*/
+
+.video-btn.play-icon-white { background-color: #fff; color: #333; border-color: #fff; }
+.video-btn.play-icon-tra {  background-color: transparent; color: #fff; border-color: #fff; }
+.video-btn.play-icon-purple { background-color: #7a59e4; border-color: #7a59e4; }
+.video-btn.play-icon-green { background-color: #48af4b; border-color: #48af4b; }
+.video-btn.play-icon-coral { background-color: #fa5876; border-color: #fa5876; }
+.video-btn.play-icon-blue { background-color: #389bf2; border-color: #389bf2; }
+
+@media (max-width: 990px) {
+
+  .content-section-1 {
+    background-image: url(/assets/img/fundo1mobile.png)!important;
+  }
+
+  .row-content {
+    flex-direction: column;
+  }
+
+  .left-content, .right-content {
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .video-place {
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-video {
+    width: 18rem;
+    height: 12rem;
+  }
+
+  .video-fixed {
+    width: 300px!important;
+  }
+
+  .right-info-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0 0 0;
+  }
+
+}

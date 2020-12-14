@@ -1,0 +1,276 @@
+.section-7 {
+  height: 55rem;
+}
+
+.content-section-7 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.line1-section-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-section-7, .info-section-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.title1-section-7, .title2-section-7 {
+  margin-right: .4rem;
+}
+
+.title1-section-7, .title2-section-7, .title3-section-7 {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: #000;
+}
+
+.info-section-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.line1-info-section-7, .line2-info-section-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.line1-info-section-7 {
+  margin-bottom: -.5rem ;
+}
+
+.line1-info-section-7 > p, .line2-info-section-7 > p {
+  font-size: .9rem;
+}
+
+.type-plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.type-plan-section-7 {
+  cursor: pointer;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 25px;
+  border: 2px solid var(--primary-color);
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.txt-plan {
+  padding-top: .65rem;
+}
+
+.info-plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 90vw;
+  margin-top: 3rem;
+}
+
+.info-plan-section-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 2rem;
+  height: 30rem;
+  width: 18rem;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.cifrao, .integer-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 6rem;
+  margin: 0;
+}
+
+.cents-value {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 6rem;
+  margin: 0;
+}
+
+.cifrao > p {
+  font-size: 2.5rem;
+}
+
+.cents-value > p {
+  font-size: 1.8rem;
+}
+
+.integer-value > p {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.info-plan-section-7 > h3 {
+  font-size: 1.2rem;
+}
+
+.info-plan-section-7 > span {
+  font-size: .8rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #959494;
+  margin: -1rem 0 1.5rem 0;
+}
+
+.info-plan-section-7 > p {
+  font-size: .8rem;
+  margin-bottom: -.1rem;
+}
+
+.free-test {
+  margin-top: 4rem!important;
+}
+
+.accept-plan {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  height: 2.5rem;
+  width: 10rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.accept-plan > p {
+  font-size: .8rem;
+  font-weight: 600;
+  color: #fff;
+  padding-top: .7rem;
+  transition: .6s;
+}
+
+.accept-plan:hover {
+  cursor: pointer;
+  color: #000!important;
+}
+
+.accept-plan:hover > p {
+  color: #000!important;
+}
+
+.btn-info-plan {
+  height: 3rem;
+  width: 25rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 3rem;
+  transition: .6s;
+}
+
+.btn-info-plan > p {
+  font-size: .8rem;
+  padding-top: .8rem;
+  font-weight: 600;
+}
+
+.btn-info-plan:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 990px) {
+
+  .section-7 {
+    height: 118rem;
+  }
+
+  .title-section-7, .info-section-7, .line1-info-section-7, .line2-info-section-7 {
+    flex-direction: column!important;
+  }
+
+  .title1-section-7, .title2-section-7 {
+    margin-bottom: -.3rem;
+  }
+
+  .title-section-7 > h3 {
+    font-size: 1.2rem;
+  }
+
+  .title-section-7 {
+    margin-top: -1rem;
+  }
+
+  .line1-info-section-7 {
+    margin-bottom: 0;
+  }
+
+  .line1-info-section-7 > p, .line2-info-section-7 > p {
+    font-size: .7rem;+
+  }
+
+  .info1-section-7, .info2-section-7, .info3-section-7, .info4-section-7 {
+    margin-bottom: -.3rem;
+  }
+
+  .type-plan-section-7 {
+    height: 1.8rem;
+    width: 6.5rem;
+  }
+
+  .txt-plan {
+    font-size: .7rem;
+    padding-top: .3rem;
+  }
+
+  .yearly {
+    margin: 0 -.5rem 0 -.5rem;;
+  }
+
+  .info-plan {
+    flex-direction: column;
+  }
+
+  .plan-mounthly, .plan-yearly {
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-info-plan {
+    height: 2.5rem;
+    width: 18rem;
+    margin-top: 3rem;
+  }
+
+  .btn-info-plan > p {
+    font-size: .7rem;
+    padding-top: .7rem;
+    transition: .6s;
+  }
+
+}

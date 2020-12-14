@@ -1,0 +1,110 @@
+.section-5 {
+  height: 41rem;
+}
+
+.content-section-5 {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/assets/img/fundo3.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.left-section-5 {
+  width: 50%;
+}
+
+.right-section-5 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-section-5 > h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 1000;
+}
+
+.title1-section-5 {
+  margin-bottom: -.4rem;
+}
+
+.title2-section-5, .info5-section-5 {
+  margin-bottom: 2rem;
+}
+
+.info-section-5 > p {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.info1-section-5, .info2-section-5, .info3-section-5, .info4-section-5, .info6-section-5, .info7-section-5  {
+  margin-bottom: -.6rem;
+}
+
+.img-info-section-5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.icon-logo-section-5 {
+  height: 6.5rem;
+  width: 6.5rem;
+}
+
+.img-app {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-app-section-5 {
+  height: 2.8rem;
+  width: 8.5rem;
+}
+
+.appstore {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 990px) {
+
+  .content-section-5 {
+    background-position: left;
+    background-image: url(/assets/img/fundo3mobile.png);
+  }
+
+  .left-section-5 {
+    display: none;
+  }
+
+  .right-section-5 {
+    margin: 0 .8rem;
+  }
+
+  .info-section-5 {
+    text-align: center;
+  }
+
+  .info-section-5 > h3 {
+    font-size: 1.8rem;
+  }
+
+  .info-section-5 > p {
+    font-size: .8rem;
+  }
+
+  .info1-section-5, .info2-section-5, .info3-section-5, .info4-section-5, .info6-section-5, .info7-section-5  {
+    margin-bottom: -.3rem;
+  }
+
+}

@@ -1,0 +1,148 @@
+.section-4 {
+  background-color: #fff!important;
+  height: 25rem;
+}
+
+.content-section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+
+.left-section-4, .right-section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.left-section-4 {
+  margin: -1rem 0 0 3.5rem;
+  padding-right: 6rem;
+}
+
+.title1-section-4, .title2-section-4 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 1000;
+}
+
+.title1-section-4 {
+  margin-bottom: -.8rem;
+}
+
+.title2-section-4 {
+  margin-bottom: 3rem;
+}
+
+.info1-section-4, .info2-section-4 {
+  margin-bottom: -.5rem;
+}
+
+.info3-section-4 {
+  margin-bottom: 3rem;
+}
+
+.btn-section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 15rem;
+  height: 2.1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  padding-top: .2rem;
+  transition: .6s;
+}
+
+.content-btn-section-4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: -.1rem 1.7rem 0 1.8rem;
+  color: #000;
+  transition: .6s;
+}
+
+.btn-section-4:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.center-section-4 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 6rem;
+  margin-top: -2rem;
+}
+
+.icon-notas-section-4 {
+  height: 14rem;
+  width: 12rem;
+}
+
+.right-section-4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  height: 100%;
+}
+
+.icon-logo-section-4 {
+  position: relative;
+  top: -18rem;
+}
+
+@media (max-width: 1130px) {
+
+  .section-4 {
+    height: 33rem;
+  }
+
+  .content-section-4 {
+    flex-direction: column;
+  }
+
+  .left-section-4 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem 2rem 0 2rem;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .center-section-4 {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  .icon-notas-section-4 {
+    height: 7rem;
+    width: 6rem;
+    margin-top: 2rem;
+  }
+
+  .right-section-4 {
+    display: none;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .section-4 {
+    height: 45rem;
+  }
+
+  .icon-notas-section-4 {
+    margin-top: -.5rem;
+  }
+
+}

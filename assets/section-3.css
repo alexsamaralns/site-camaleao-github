@@ -1,0 +1,120 @@
+.section-3 {
+  background-color: #000!important;
+  height: 37rem;
+  z-index: 99999;
+}
+
+.content-section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/assets/img/fundo2.png);
+  background-repeat: no-repeat;
+}
+
+.left-section-3 {
+  width: 100%;
+}
+
+.right-section-3 {
+  width: 100%;
+}
+
+.title-section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.title1-section-3, .title2-section-3 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 1000;
+}
+
+.title1-section-3 {
+  margin-bottom: -.6rem;
+}
+
+.title2-section-3 {
+  margin-bottom: 2.5rem;
+}
+
+.info-section-3 > p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.info1-section-3 {
+  margin-bottom: -.5rem;
+}
+
+.btn-section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 18rem;
+  height: 2.1rem;
+  margin-top: 3rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  padding-top: .2rem;
+  transition: .6s;
+}
+
+.btn-section-3 > h3 {
+  font-size: .75rem;
+  font-weight: 600;
+  margin: -.1rem 1.7rem 0 1.8rem;
+  color: #fff;
+  transition: .6s;
+}
+
+.arrow-right-section-3 {
+  font-size: 2.3rem;
+  color: #fff;
+  margin-top: -.3rem;
+  transition: .6s;
+}
+
+.btn-section-3:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #000!important;
+}
+
+.btn-section-3:hover .arrow-right-section-3, .btn-section-3:hover .content-btn-section-3 {
+  color: #000!important;
+}
+
+@media (max-width: 990px) {
+
+  .content-section-3 {
+    flex-direction: column;
+    background-image: url(/assets/img/fundo2mobile.png);
+    background-position: left;
+  }
+
+  .btn-place-section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-section-3, .info-section-3 {
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+  }
+
+  .info2-section-3 {
+    margin-top: .5rem;
+  }
+
+}

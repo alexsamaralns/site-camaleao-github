@@ -1,0 +1,231 @@
+.section-2 {
+  background-color: #fff!important;
+  height: 25rem;
+}
+
+.content-section-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.section-2-title {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.title1-section-2 {
+  font-size: 2rem;
+  font-weight: 1000;
+  margin: 3rem 0 2rem 0;
+}
+
+.title2-section-2 {
+  font-size: 2rem;
+  font-weight: 1000;
+  margin: -2rem 0 2rem 0;
+}
+
+.info-section-2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: -.5rem;
+}
+
+.final-info-section-2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.final-info1-section-2 {
+  font-size: 1.2rem;
+  margin: 2rem .5rem 0 0;
+}
+
+.final-info2-section-2 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.btn-section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 15rem;
+  height: 2.1rem;
+  margin-top: 2rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  padding-top: .2rem;
+  transition: .6s;
+}
+
+.btn-section-2 > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: -.2rem 1.5rem 0 2.5rem;
+}
+
+.arrow-right-section-2 {
+  font-size: 2.3rem;
+  color: #000;
+}
+
+.btn-section-2:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #blue!important;
+}
+
+.right-space {
+  height: 20rem;
+  width: 31.2rem;
+  background-color: var(--primary-color);
+  border-radius: 25px;
+  margin-top: 2.5rem;
+}
+
+.icon-folhas {
+  height: 7.2rem;
+  width: 6rem;
+}
+
+.icon-fluxo {
+  height: 7.5rem;
+  width: 8.5rem;
+  margin-left: -1rem!important;
+}
+
+.icon-estoque {
+  height: 7.5rem;
+  width: 6rem;
+}
+
+.icon-financeiro {
+  height: 7.5rem;
+  width: 7rem;
+}
+
+.icon-agenda {
+  height: 7.5rem;
+  width: 6rem;
+  margin-left: -2rem;
+}
+
+.icon-cadastro {
+  height: 7.5rem;
+  width: 6rem;
+}
+
+.icons-right-space {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30rem;
+  margin: 2.5rem 0 0 2rem;
+}
+
+.line-up, .line-down {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.line-up {
+  margin-left: -2rem;
+}
+
+.line-down {
+  margin-left: -2.5rem;
+}
+
+@media (max-width: 990px) {
+
+  .section-2 {
+    height: 45rem;
+  }
+
+  .content-section-2 {
+    display: flex!important;
+    flex-direction: column!important;
+    margin: 0 1.5rem;
+  }
+
+  .left-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-2-title, .final-info-section-2 {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .final-info2-section-2 {
+    margin-top: -.5rem;
+  }
+
+  .right-space {
+    position: relative;
+    height: 15rem;
+    width: 20rem;
+  }
+
+  .line-up {
+    margin-left: 3rem;
+    width: 70%;
+  }
+
+  .line-down {
+    margin-left: 3rem;
+    width: 70%;
+  }
+
+  .icon-folhas {
+    height: 4.2rem;
+    width: 3.5rem;
+  }
+
+  .icon-fluxo {
+    height: 4.5rem;
+    width: 6rem;
+    margin-left: 1.5rem!important;
+  }
+
+  .icon-estoque {
+    height: 4.5rem;
+    width: 3.5rem;
+    margin-left: 1.5rem!important;
+  }
+
+  .icon-financeiro {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+
+  .icon-agenda {
+    height: 4.5rem;
+    width: 3.5rem;
+    margin-left: 2rem!important;
+  }
+
+  .icon-cadastro {
+    height: 4.5rem;
+    width: 3.5rem;
+    margin-left: 2.5rem!important;
+  }
+
+  .icons-right-space {
+    margin: 2.5rem 0 0 0;
+    width: 20rem;
+  }
+
+}

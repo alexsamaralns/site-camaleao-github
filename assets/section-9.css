@@ -1,0 +1,160 @@
+.section-9 {
+  height: 25rem;
+}
+
+.content-section-9 {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/assets/img/fundo5.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.left-section-9, .right-section-9 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-section-9 > h3 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #fff;
+  margin-bottom: -.6rem;
+}
+
+.subtitle-section-9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 2rem 0 0 -7rem;;
+}
+
+.subtitle1-section-9, .subtitle2-section-9 {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.subtitle1-section-9 {
+  margin-right: .4rem;
+}
+
+.line1-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.input-form {
+  border: none;
+  border-radius: 13px;
+  height: 2.5rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.name-form {
+  margin-right: .8rem;
+}
+
+.name-form, .email-form {
+  width: 50%;
+}
+
+.about-form, .message-form {
+  width: 100%;
+}
+
+.message-form {
+  height: 9rem;
+  padding: 1rem;
+}
+
+.btn-form {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: bolder;
+  height: 2rem;
+  width: 8rem;
+  transition: .6s;
+}
+
+.btn-form:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+@media (max-width: 1220px) {
+
+  .left-section-9 {
+    margin-left: 1rem;
+  }
+
+  .right-section-9 {
+    margin-right: 1rem;
+  }
+
+}
+
+@media (max-width: 990px) {
+
+  .section-9 {
+    height: 40rem;
+  }
+
+  .content-section-9 {
+    flex-direction: column;
+  }
+
+  .left-section-9, .right-section-9 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .title-section-9 > h3 {
+    font-size: 1.5rem;
+    margin-bottom: -.4rem;
+    flex-direction: column;
+  }
+
+  .subtitle-section-9 {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .subtitle1-section-9 {
+    margin: 2rem 0 -.3rem 0;
+  }
+
+  .line1-form {
+    flex-direction: column;
+  }
+
+  .name-form {
+    margin-right: 0;
+  }
+
+  .input-form, .btn-form {
+    width: 90%;
+  }
+
+  .btn-form {
+    margin-bottom: 2rem;
+  }
+
+}

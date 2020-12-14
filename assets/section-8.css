@@ -1,0 +1,98 @@
+.section-8 {
+  height: 45rem;
+}
+
+.content-section-8 {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/assets/img/fundo4.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.left-section-8 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin: 14rem 0 0 5rem;
+  overflow: hidden;
+}
+
+.info-section-8 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.info-section-8 > h3 {
+  font-size: 2.5rem;
+  font-weight: 1000;
+  color: #fff;
+  margin-bottom: -.5rem;
+}
+
+.btn-blog {
+  height: 3rem;
+  width: 20rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 2rem;
+  transition: .6s;
+}
+
+.btn-blog > p {
+  font-size: .85rem;
+  font-weight: bolder;
+  color: #fff;
+  padding-top: .65rem;
+  transition: .6s;
+}
+
+.btn-blog:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.btn-blog:hover > p {
+  color: #000!important;
+}
+
+.icon-logo-section-8 {
+  position: relative;
+  bottom: -18rem;
+  margin-top: -14rem;
+}
+
+@media (max-width: 990px) {
+
+  .content-section-8 {
+    justify-content: center;
+    background-image: url(/assets/img/fundo4mobile.png);
+  }
+
+  .left-section-8 {
+    justify-content: center;
+    margin: 4rem 0 0 0;
+  }
+
+  .info-section-8 {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-blog {
+    margin-top: 4rem;
+  }
+
+  .icon-logo-section-8 {
+    display: none;
+  }
+
+}
