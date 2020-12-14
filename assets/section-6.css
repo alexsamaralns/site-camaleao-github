@@ -129,6 +129,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   margin: -.2rem 1.5rem 0 2rem;
+  color: #000!important;
 }
 
 .arrow-right-section-6 {
@@ -139,7 +140,11 @@
 .btn-section-6:hover {
   cursor: pointer;
   background-color: var(--primary-color);
-  color: #blue!important;
+  color: #000!important;
+}
+
+.btn-section-6:hover h3 {
+  color: #000!important;
 }
 
 @media (max-width: 990px) {
