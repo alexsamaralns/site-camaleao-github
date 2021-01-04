@@ -101,14 +101,26 @@
   width: 22rem;
 }
 
+@media (max-width: 1350px) {
+
+  .right-section-4 {
+    display: none;
+  }
+
+}
+
 @media (max-width: 1130px) {
 
   .section-4 {
-    height: 33rem;
+    height: 38rem;
   }
 
   .content-section-4 {
     flex-direction: column;
+  }
+
+  .btn-section-4 {
+    margin-bottom: 2rem;
   }
 
   .left-section-4 {
@@ -146,6 +158,10 @@
 
   .icon-notas-section-4 {
     margin-top: -.5rem;
+  }
+
+  .center-section-4 {
+    margin: 0;
   }
 
 }

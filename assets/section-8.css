@@ -87,6 +87,10 @@
     align-items: center;
   }
 
+  .info-section-8 > h3 {
+    font-size: 2rem;
+  }
+
   .btn-blog {
     margin-top: 4rem;
   }

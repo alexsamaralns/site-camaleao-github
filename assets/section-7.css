@@ -1,5 +1,6 @@
 .section-7 {
   height: 55rem;
+  background-color: #fff;
 }
 
 .content-section-7 {
@@ -8,7 +9,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fff;
 }
 
 .line1-section-7 {
@@ -217,6 +217,10 @@
 
   .title-section-7, .info-section-7, .line1-info-section-7, .line2-info-section-7 {
     flex-direction: column!important;
+  }
+
+  .title-right-section-6 {
+    text-align: center;
   }
 
   .title1-section-7, .title2-section-7 {
