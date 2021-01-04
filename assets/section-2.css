@@ -20,18 +20,21 @@
   font-size: 2rem;
   font-weight: 1000;
   margin: 3rem 0 2rem 0;
+  color: #000;
 }
 
 .title2-section-2 {
   font-size: 2rem;
   font-weight: 1000;
   margin: -2rem 0 2rem 0;
+  color: #000;
 }
 
 .info-section-2 {
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: -.5rem;
+  color: #000;
 }
 
 .final-info-section-2 {
@@ -43,11 +46,13 @@
 .final-info1-section-2 {
   font-size: 1.2rem;
   margin: 2rem .5rem 0 0;
+  color: #000;
 }
 
 .final-info2-section-2 {
   font-size: 1.2rem;
   margin-top: 2rem;
+  color: #000;
 }
 
 .btn-section-2 {

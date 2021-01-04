@@ -17,8 +17,8 @@ yearly.addEventListener('click', function() {
   changePlan(1);
 })
 
-mounthly.addEventListener('click', function() {
-  semiannual(2);
+semiannual.addEventListener('click', function() {
+  changePlan(2);
 })
 
 function changePlan(plan) {

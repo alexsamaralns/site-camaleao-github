@@ -1,5 +1,6 @@
 .footer {
   height: 32rem;
+  background-color: #fff;
 }
 
 h3, p {
@@ -9,7 +10,6 @@ h3, p {
 
 .content-footer {
   height: 100%;
-  background-color: #fff;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;

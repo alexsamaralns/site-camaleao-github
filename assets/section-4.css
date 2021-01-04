@@ -19,8 +19,9 @@
 }
 
 .left-section-4 {
-  margin: -1rem 0 0 3.5rem;
+  margin: -1rem 0 0 12rem;
   padding-right: 6rem;
+  z-index: 9999;
 }
 
 .title1-section-4, .title2-section-4 {
@@ -76,7 +77,7 @@
   align-items: center;
   flex-direction: row;
   padding-left: 6rem;
-  margin-top: -2rem;
+  margin: -2rem 0 0 -6rem;
 }
 
 .icon-notas-section-4 {
@@ -95,7 +96,9 @@
 
 .icon-logo-section-4 {
   position: relative;
-  top: -18rem;
+  top: -13.5rem;
+  height: 24rem;
+  width: 22rem;
 }
 
 @media (max-width: 1130px) {

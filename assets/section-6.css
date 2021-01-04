@@ -1,5 +1,6 @@
 .section-6 {
   height: 41rem;
+  background-color: #fff;
 }
 
 .content-section-6 {
@@ -8,7 +9,6 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  background-color: #fff;
 }
 
 .left-section-6 {

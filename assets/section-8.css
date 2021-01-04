@@ -1,13 +1,13 @@
 .section-8 {
   height: 45rem;
-}
-
-.content-section-8 {
-  height: 100%;
   background-position: center;
   background-size: cover;
   background-image: url(../assets/img/fundo4.png);
   background-repeat: no-repeat;
+}
+
+.content-section-8 {
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;

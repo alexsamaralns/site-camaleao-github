@@ -1,6 +1,10 @@
 .section-3 {
   background-color: #000!important;
-  height: 37rem;
+  height: 35rem;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/img/fundo2.png);
+  background-repeat: no-repeat;
   z-index: 99999;
 }
 
@@ -10,10 +14,6 @@
   align-items: center;
   flex-direction: row;
   height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-image: url(../assets/img/fundo2.png);
-  background-repeat: no-repeat;
 }
 
 .left-section-3 {
@@ -22,6 +22,7 @@
 
 .right-section-3 {
   width: 100%;
+  margin: 20rem 10rem 0 0;
 }
 
 .title-section-3 {
@@ -51,7 +52,7 @@
 }
 
 .info1-section-3 {
-  margin-bottom: -.5rem;
+  margin-bottom: .5rem;
 }
 
 .btn-section-3 {
@@ -93,12 +94,34 @@
   color: #000!important;
 }
 
+.big-logo-section-3 {
+  position: relative;
+}
+
+.icon-logo-section-3 {
+  position: relative;
+  top: -8.5rem;
+  right: -9.9rem;
+  height: 24rem;
+  width: 22rem;
+}
+
+.info-right-section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media (max-width: 990px) {
+
+  .section-3 {
+    background-image: url(../assets/img/fundo2mobile.png);
+    background-position: left;
+  }
 
   .content-section-3 {
     flex-direction: column;
-    background-image: url(../assets/img/fundo2mobile.png);
-    background-position: left;
   }
 
   .btn-place-section-3 {

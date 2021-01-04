@@ -1,13 +1,13 @@
 .section-5 {
   height: 41rem;
+  background-position: top;
+  background-size: cover;
+  background-image: url(../assets/img/fundo3.png);
+  background-repeat: no-repeat;
 }
 
 .content-section-5 {
   height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-image: url(../assets/img/fundo3.png);
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
