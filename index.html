@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="./assets/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="././assets/styles-navbar.css">
+  <link rel="stylesheet" href="./assets/styles-navbar.css">
   <link rel="stylesheet" href="./assets/section-1.css">
   <link rel="stylesheet" href="./assets/section-2.css">
   <link rel="stylesheet" href="./assets/section-3.css">
@@ -23,7 +23,7 @@
 
 <body>
   <section class="section-header">
-    <div class="header">
+    <div class="header container">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <img class="logo-navbar" src="./assets/img/logo.png" alt="logo">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +67,7 @@
   </section>
 
   <section class="section-1">
-    <div class="content-section-1">
+    <div class="content-section-1 container">
       <div class="row-content">
         <div class="left-content">
           <h3 class="info-section-1">
@@ -349,13 +349,13 @@
           </div>
         </div>
         <div class="type-plan">
-          <div class="mounthly type-plan-section-7" id="mounthly" onclick="changePlan(0)">
+          <div class="mounthly type-plan-section-7" id="mounthly">
             <p class="info-mounthly txt-plan">MENSAL</p>
           </div>
-          <div class="yearly type-plan-section-7" id="yearly" onclick="changePlan(1)">
+          <div class="yearly type-plan-section-7" id="yearly">
             <p class="info-yearly txt-plan">ANUAL</p>
           </div>
-          <div class="semiannual type-plan-section-7" id="semiannual" onclick="changePlan(2)">
+          <div class="semiannual type-plan-section-7" id="semiannual">
             <p class="info-semiannual txt-plan">SEMESTRAL</p>
           </div>
         </div>
@@ -553,69 +553,6 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script>
-    // This code loads the IFrame Player API code asynchronously.
-    var tag = document.createElement('script');
-
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // This function creates an <iframe> (and YouTube player)
-    // after the API code downloads.
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: 'am_s_0EBbGw',
-        events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-      }
-      });
-    }
-
-      // The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // The API calls this function when the player's state changes.
-      // The function indicates that when playing a video (state=1),
-      // the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          done = true;
-        }else {
-          done = false;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-
-      $(window).on('scroll', function() {
-        "use strict";
-        var b = $(window).scrollTop();
-        if( b > 72 && done == true){
-          $("#player").addClass("video-fixed");
-          $("#close-video").addClass("close-video");
-          $("#close-video").removeClass("hide-close-btn");
-          }else if(b == 0) {
-          $("#close-video").addClass("hide-close-btn");
-          $("#player").removeClass("video-fixed");
-          $("#close-video").removeClass("close-video");
-        }
-      });
-
-      function closeVideo() {
-        this.stopVideo();
-        done = false;
-        $("#player").removeClass("video-fixed");
-        $("#close-video").removeClass("close-video");
-      }
-
-      </script>
 </body>
 
 </html>

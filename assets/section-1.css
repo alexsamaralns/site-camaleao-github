@@ -1,13 +1,13 @@
 .section-1 {
   height: 41rem;
-}
-
-.content-section-1 {
-  height: 100%;
   background-position: center;
   background-size: cover;
   background-image: url(../assets/img/fundo1.png);
   background-repeat: no-repeat;
+}
+
+.content-section-1 {
+  height: 100%;
 }
 
 .row-content {
@@ -18,7 +18,7 @@
 }
 
 .left-content {
-  margin: 7rem 0 0 3rem;
+  margin-top: 7rem;
 }
 
 .info-section-1 {
@@ -42,7 +42,7 @@
 }
 
 .right-info-content {
-  margin: 3rem 10rem 0 0;
+  margin-top: 3rem;
   text-align: right;
 }
 
@@ -83,7 +83,7 @@
 /*------------------------------------------*/
 
 .video-place {
-  margin: 7rem 5rem 0 0;
+  margin-top: 7rem;
 }
 
 .intro-video {
@@ -269,7 +269,7 @@
 
 @media (max-width: 990px) {
 
-  .content-section-1 {
+  .section-1 {
     background-image: url(../assets/img/fundo1mobile.png)!important;
   }
 

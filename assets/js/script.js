@@ -1,9 +1,25 @@
+var mounthly = document.getElementById('mounthly');
+var yearly = document.getElementById('yearly');
+var semiannual = document.getElementById('semiannual');
+
 document.getElementById('mounthly').style.backgroundColor = "transparent";
 document.getElementById('mounthly').style.fontWeight = "400";
 document.getElementById('yearly').style.backgroundColor = "var(--primary-color)";
 document.getElementById('yearly').style.fontWeight = "600";
 document.getElementById('semiannual').style.backgroundColor = "transparent";
 document.getElementById('semiannual').style.fontWeight = "400";
+
+mounthly.addEventListener('click', function() {
+  changePlan(0);
+})
+
+yearly.addEventListener('click', function() {
+  changePlan(1);
+})
+
+mounthly.addEventListener('click', function() {
+  semiannual(2);
+})
 
 function changePlan(plan) {
     if(plan == 0) {
