@@ -113,6 +113,23 @@
   flex-direction: column;
 }
 
+@media (min-width: 1920px) {
+
+  .section-3 {
+    height: 50rem;
+  }
+
+  .icon-logo-section-3 {
+    top: 0rem;
+    right: -9.9rem;
+  }
+
+  .right-section-3 {
+    margin: 8rem 10rem 0 0;
+  }
+
+}
+
 @media (max-width: 1350px) {
 
   .big-logo-section-3 {
@@ -136,12 +153,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -3rem;
   }
 
   .title-section-3, .info-section-3 {
     flex-wrap: nowrap;
     text-align: center;
     align-items: center;
+    margin-top: -3rem;
   }
 
   .info2-section-3 {

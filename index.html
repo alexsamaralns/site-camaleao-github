@@ -22,9 +22,12 @@
 </head>
 
 <body>
-  <section class="section-header">
+  <div class="hide-up-button" id="topButton" onclick="scrollToSection('#section-header')">
+    <img class="up" src="./assets/img/up.png" alt="up">
+  </div>
+  <section class="section-header" id="section-header">
     <div class="header container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light">
         <img class="logo-navbar" src="./assets/img/logo.png" alt="logo">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <img class="menu-navbar" src="./assets/img/menu.png" alt="menu">
@@ -44,21 +47,14 @@
                 <a class="dropdown-item" href="#">Ferramentas 3</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Planos
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Planos 1</a>
-                <a class="dropdown-item" href="#">Planos 2</a>
-                <a class="dropdown-item" href="#">Planos 3</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" onclick="scrollToSection('#section-7')">Planos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contatos</a>
             </li>
             <li class="nav-item test-link">
-              <a class="nav-link test-free" href="#">Teste Grátis</a>
+              <a class="nav-link test-free" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
             </li>
           </ul>
         </div>
@@ -66,7 +62,7 @@
     </div>
   </section>
 
-  <section class="section-1">
+  <section class="section-1" id="section-1">
     <div class="content-section-1 container">
       <div class="row-content">
         <div class="left-content">
@@ -104,9 +100,9 @@
               completo sistema de gestão
             </h3>
             <div class="right-last-line-info-section-1">
-              <h3 class="last-line-right-info-section-1">
-                Saiba mais
-              </h3>
+              <a class="last-line-right-info-section-1" id="saibaMais" onclick="scrollToSection('#section-2')">
+                <h3 href="#section-2">Saiba mais</h3>
+              </a>
             </div>
           </div>
         </div>
@@ -114,7 +110,7 @@
     </div>
   </section>
 
-  <section class="section-2">
+  <section class="section-2" id="section-2">
     <div class="content-section-2">
       <div class="left-space">
         <div class="section-2-title">
@@ -310,14 +306,14 @@
           <p class="info3-section-6">ou médio porte, chegou a hora de inovar</p>
           <p class="info4-section-6">e gerenciar sua empresa de forma mais prática.</p>
         </div>
-        <div class="btn-section-6">
+        <a class="btn-section-6" href="https://blasterti.com/checkout-camaleao/" target="_blank">
           <h3>Confira já</h3><i class="fas fa-caret-right arrow-right-section-6"></i>
-        </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="section-7">
+  <section class="section-7" id="section-7">
     <div class="content-section-7 container">
       <div class="line1-section-7">
         <div class="title-section-7">
@@ -511,10 +507,10 @@
         <p>API</p>
         <h3>NOS SIGA NAS REDES SOCIAIS</h3>
         <div class="social">
-          <img src="./assets/img/facebook.png" alt="facebook" class="facebook-footer">
-          <img src="./assets/img/twitter.png" alt="twitter" class="twitter-footer">
-          <img src="./assets/img/ball.png" alt="ball" class="ball-footer">
-          <img src="./assets/img/instagram.png" alt="instagram" class="instagram-footer">
+          <a href="#"><img class="socialMidia" src="./assets/img/facebook.png" alt="facebook" class="facebook-footer"></a>
+          <a href="#"><img class="socialMidia" src="./assets/img/twitter.png" alt="twitter" class="twitter-footer"></a>
+          <a href="#"><img class="socialMidia" src="./assets/img/ball.png" alt="ball" class="ball-footer"></a>
+          <a href="#"><img class="socialMidiaLast" src="./assets/img/instagram.png" alt="instagram" class="instagram-footer"></a>
         </div>
       </div>
       <div class="column2">

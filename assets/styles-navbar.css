@@ -25,10 +25,6 @@ body {
   width: 3.3rem;
 }
 
-.nav-item {
-  /*margin-right: .8rem;*/
-}
-
 .nav-link {
   font-size: 1.35rem;
   color: #fff!important;
@@ -52,6 +48,10 @@ body {
   background-color: var(--primary-color);
 }
 
+.nav-item:hover {
+  cursor: pointer;
+}
+
 .dropdown-toggle::after {
   color: var(--primary-color);
 }
@@ -73,6 +73,29 @@ body {
   cursor: pointer;
   color: #000!important;
   background-color: var(--primary-color);
+}
+
+.hide-up-button {
+  display: none;
+}
+
+.topButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  bottom: 1rem;
+  right: 1rem;
+  box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.75);
+  z-index: 9999;
+}
+
+.topButton:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 991px) {

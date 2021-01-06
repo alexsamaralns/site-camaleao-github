@@ -45,10 +45,15 @@ h3, p {
   margin-top: .6rem;
 }
 
-.social > img {
+.socialMidia {
   height: 4rem;
   width: 4rem;
   margin-right: 1.5rem;
+}
+
+.socialMidiaLast {
+  height: 4rem;
+  width: 4rem;
 }
 
 @media (max-width: 990px) {

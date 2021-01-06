@@ -72,10 +72,18 @@
   transition: .6s;
 }
 
+.last-line-right-info-section-1 > h3 {
+  color: #fff;
+  transition: .6s;
+}
+
 .last-line-right-info-section-1:hover {
   cursor: pointer;
-  color: #000;
   background-color: var(--primary-color);
+}
+
+.last-line-right-info-section-1:hover h3 {
+  color: #000;
 }
 
 /*------------------------------------------*/

@@ -38,20 +38,6 @@ function stopVideo() {
   player.stopVideo();
 }
 
-/*$(window).on('scroll', function() {
-    "use strict";
-    var b = $(window).scrollTop();
-    if( b > 72 && done == true){
-        $("#player").addClass("video-fixed");
-        $("#close-video").addClass("close-video");
-        $("#close-video").removeClass("hide-close-btn");
-    }else if(b == 0) {
-        $("#close-video").addClass("hide-close-btn");
-        $("#player").removeClass("video-fixed");
-        $("#close-video").removeClass("close-video");
-    }
-});*/
-
 window.onscroll = function() {
     "use strict";
     var b = $(window).scrollTop();
