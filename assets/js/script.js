@@ -1,5 +1,5 @@
-window.onscroll = function() {
-    "use strict";
+/*window.onscroll = function() {
+    //"use strict";
     var b = $(window).scrollTop();
     if( b > 72){
         $("#topButton").addClass("topButton");
@@ -8,7 +8,7 @@ window.onscroll = function() {
       $("#topButton").addClass("hide-up-button");
       $("#topButton").removeClass("topButton");
     }
-};
+};*/
 
 var mounthly = document.getElementById('mounthly');
 var yearly = document.getElementById('yearly');
