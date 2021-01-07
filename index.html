@@ -9,8 +9,11 @@
   <link href="./assets/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/styles-navbar.css">
   <link rel="stylesheet" href="./assets/section-1.css">
+  <link rel="stylesheet" href="./assets/modal-section-2.css">
   <link rel="stylesheet" href="./assets/section-2.css">
+  <link rel="stylesheet" href="./assets/modal-section-3.css">
   <link rel="stylesheet" href="./assets/section-3.css">
+  <link rel="stylesheet" href="./assets/modal-section-4.css">
   <link rel="stylesheet" href="./assets/section-4.css">
   <link rel="stylesheet" href="./assets/section-5.css">
   <link rel="stylesheet" href="./assets/section-6.css">
@@ -49,6 +52,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" onclick="scrollToSection('#section-7')">Planos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://blaster.movidesk.com/kb" target="_blank">Central de ajuda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" onclick="scrollToSection('#section-9')">Contato</a>
@@ -131,52 +137,174 @@
       <div class="right-space">
         <div class="icons-right-space">
           <div class="line-up">
-            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#notaFiscal">
               <img class="icon-folhas" src="./assets/img/folhas.png" alt="nota-fiscal">
             </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!-- Modal Nota Fiscal -->
+            <div class="modal fade" id="notaFiscal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <div class="modal-content modal-section-2">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="exampleModalLabel">NOTA FISCAL</h5>
+                    <img class="icon-folhas-modal" src="./assets/img/folhasSmall.png" alt="nota-fiscal">
                   </div>
                   <div class="modal-body">
-                    ...
+                    <p>A tributação começa na Nota Fiscal eletrônica, ou seja, a emissão do documento é a prova de que uma
+                      empresa paga seus tributos corretamente.</p>
+                    <p>As Notas Fiscais também são essenciais para manter a empresa em dia, ajudando a gerar confiança para
+                      os fornecedores e clientes.</p>
+                    <p>Esse documento fiscal também é um direito do consumidor que, em caso de defeito da mercadoria adquirida,
+                      poderá exigir a substituição ou restituição da quantia paga ou abatimento proporcional do preço, mediante a
+                      nota fiscal.</p>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
                   </div>
                 </div>
               </div>
             </div>
 
-            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#exampleModal">
-              <img class="icon-fluxo" src="./assets/img/fluxo_caixa.png" alt="nota-fiscal">
+            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#fluxoCaixa">
+              <img class="icon-fluxo" src="./assets/img/fluxo_caixa.png" alt="fluxo-caixa">
             </button>
 
-            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#exampleModal">
-              <img class="icon-estoque" src="./assets/img/estoque.png" alt="nota-fiscal">
+            <!-- Modal Fluxo De Caixa -->
+            <div class="modal fade" id="fluxoCaixa" tabindex="-1" role="dialog" aria-labelledby="fluxoCaixa" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">FLUXO DE CAIXA</h5>
+                    <img class="icon-folhas-modal" src="./assets/img/fluxo_caixaSmall.png" alt="nota-fiscal">
+                  </div>
+                  <div class="modal-body">
+                    <p>Fluxo de caixa é uma ferramenta de controle financeiro que mostra, detalhadamente, os valores que entram e saem
+                      de uma empresa e seu cálculo é feito a partir dos saldos existentes em contas bancárias e dinheiro disponível na
+                      empresa.</p>
+                    <p>Por isso é importante ter um controle sobre o fluxo de caixa, pois é por meio dele que o empresário mantém a vida
+                      financeira do empreendimento organizada. Assim, ele fica ciente de todo o dinheiro da empresa, tanto as receitas e
+                      quanto as dívidas, a fim de tomar as melhores decisões na hora de remanejar os valores para setores que a empresa
+                      necessite, por exemplo, além de impedir, que você atrase os pagamentos dos impostos que incidem sobre a sua empresa.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#estoque">
+              <img class="icon-estoque" src="./assets/img/estoque.png" alt="estoque">
             </button>
+
+            <!-- Modal Estoque -->
+            <div class="modal fade" id="estoque" tabindex="-1" role="dialog" aria-labelledby="estoque" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ESTOQUE</h5>
+                    <img class="icon-folhas-modal" src="./assets/img/estoqueSmall.png" alt="estoque">
+                  </div>
+                  <div class="modal-body">
+                    <p>Controle de estoque consiste em realizar a gestão de mercadorias de uma empresa. Em outras palavras, registrar
+                      o fluxo de entrada e saída de artigos para viabilizar condições que otimizem o seu uso eficiente e minimizem a
+                      necessidade de investimento de capital. Daí a importância do controle de estoque ser tão grande.</p>
+                    <p>Um rigoroso controle desse processo de gestão é fundamental para potencializar a rentabilidade de uma organização
+                      e reforçar a sua estrutura de negócio.</p>
+                    <p>Apesar disso, ainda o controle de estoque é ignorado em muitas empresas pelo simples desconhecimento dos
+                      princípios básicos de uma boa administração.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
           <div class="line-down">
-            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#financeiro">
               <img class="icon-financeiro" src="./assets/img/financeiro.png" alt="nota-fiscal">
             </button>
 
-            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#exampleModal">
+            <!-- Modal Financeiro -->
+            <div class="modal fade" id="financeiro" tabindex="-1" role="dialog" aria-labelledby="financeiro" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">FINANCEIRO</h5>
+                    <img class="icon-folhas-modal" src="./assets/img/financeiroSmall.png" alt="financeiro">
+                  </div>
+                  <div class="modal-body">
+                    <p>A falta de controle financeiro e planejamento é o principal motivo de muitas empresas fecharem as portas antes
+                      mesmo de alcançarem os primeiros anos de funcionamento.</p>
+                    <p>A inexistência ou mesmo a insuficiência de um plano financeiro inviabiliza que muitas organizações possam dirigir,
+                      controlar e coordenar ações para a execução dos seus objetivos.</p>
+                    <p>É importante destacar que planos financeiros de curto prazo custeiam os planos financeiros de longo prazo,
+                      ajudando a nortear as melhores alternativas de crescimento, a priorizar objetivos e a dar uma direção mais assertiva
+                      para a empresa.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#agenda">
               <img class="icon-agenda" src="./assets/img/agenda.png" alt="nota-fiscal">
             </button>
 
-            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#exampleModal">
+            <!-- Modal Agenda -->
+            <div class="modal fade" id="agenda" tabindex="-1" role="dialog" aria-labelledby="agenda" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">AGENDA</h5>
+                    <img class="icon-folhas-modal" src="./assets/img/agendaSmall.png" alt="agenda">
+                  </div>
+                  <div class="modal-body">
+                    <p>Antes de conferir como uma agenda eletrônica pode mudar para sempre sua forma de organizar consultas, é
+                      preciso entender como ela funciona.</p>
+                    <p>Por isso, esqueça tabelas complicadas, agendas de papel e listas intermináveis que só atrapalham quando você
+                      precisa encontrar informações não só de consultas, mas de cadastros dos pacientes.</p>
+                    <p>Com uma agenda você integra processos e encontra tudo no mesmo lugar. Com acesso 24h de forma totalmente online,
+                      você pode registrar consultas e compartilhar o acesso com outros profissionais.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#cadastros">
               <img class="icon-cadastro" src="./assets/img/cadastro.png" alt="nota-fiscal">
             </button>
+
+            <!-- Modal Cadastros -->
+            <div class="modal fade" id="cadastros" tabindex="-1" role="dialog" aria-labelledby="cadastros" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">CADASTROS</h5>
+                    <img class="icon-folhas-modal" src="./assets/img/cadastroSmall.png" alt="cadastros">
+                  </div>
+                  <div class="modal-body">
+                    <p>Ter uma base de compradores fiéis e satisfeitos é essencial para o sucesso de qualquer empresa. Dentre as
+                      inúmeras possibilidades para interagir com os consumidores, destaca-se o cadastro de cliente. Trata-se de uma
+                      maneira de o negócio conhecer melhor a pessoa que está consumindo seus produtos e serviços.</p>
+                    <p>Por meio do cadastro de cliente, a organização pode traçar estratégias mais acertadas para criar empatia e
+                      aumentar as vendas, alcançando os resultados esperados. Com essa prática, a empresa passa a ter um contato mais
+                      próximo e personalizado com o consumidor, o que é essencial para a estratégia de qualquer organização que busca se
+                      consolidar no mercado.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -197,7 +325,41 @@
         </div>
         <div class="btn-place-section-3">
           <div class="btn-section-3">
-            <h3 class="content-btn-section-3">É NISSO QUE ACREDITAMOS</h3><i class="fas fa-caret-right arrow-right-section-3"></i>
+            <button type="button" class="content-btn-section-3" data-toggle="modal" data-target="#modal-section-3">
+              <h3>É NISSO QUE ACREDITAMOS</h3><i class="fas fa-caret-right arrow-right-section-3"></i>
+            </button>
+
+            <!-- Modal Section 3 -->
+            <div class="modal fade" id="modal-section-3" tabindex="-1" role="dialog" aria-labelledby="modal-section-3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-3">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">NOSSA MISSÃO</h5>
+                  </div>
+                  <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. Morbi non arcu risus quis. Ut lectus arcu bibendum at. Ut consequat semper viverra nam
+                      libero. Eget sit amet tellus cras adipiscing. Integer malesuada nunc vel risus commodo viverra. Semper quis lectus
+                      nulla at volutpat diam ut. Posuere ac ut consequat semper. Mollis nunc sed id semper risus in. Quis ipsum suspendisse
+                      ultrices gravida dictum fusce. Sagittis id consectetur purus ut faucibus pulvinar. Velit laoreet id donec ultrices
+                      tincidunt arcu non. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Sed libero enim sed faucibus turpis
+                      in. Magna etiam tempor orci eu lobortis elementum. Nisl condimentum id venenatis a condimentum. Sed cras ornare arcu
+                      dui vivamus arcu felis bibendum ut. Quam viverra orci sagittis eu volutpat odio. Nibh tortor id aliquet lectus proin
+                      nibh nisl. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque.</p>
+                    <p>In ornare quam viverra orci sagittis eu volutpat odio facilisis. Volutpat diam ut venenatis tellus in metus.
+                      Dignissim sodales ut eu sem integer vitae justo eget magna. Id venenatis a condimentum vitae sapien pellentesque.
+                      Proin fermentum leo vel orci porta. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Mauris sit
+                      amet massa vitae tortor condimentum lacinia quis. Diam quam nulla porttitor massa id neque aliquam. Non tellus orci
+                      ac auctor. Ultricies leo integer malesuada nunc vel risus commodo viverra. Scelerisque fermentum dui faucibus in
+                      ornare quam. Justo donec enim diam vulputate.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -218,7 +380,33 @@
         </div>
         <div class="btn-place-section-4">
           <div class="btn-section-4">
-            <h3 class="content-btn-section-4">Saiba mais</h3>
+            <button type="button" class="content-btn-section-4" data-toggle="modal" data-target="#modal-section-4">
+              <h3>Saiba mais</h3>
+            </button>
+
+            <!-- Modal Section 4 -->
+            <div class="modal fade" id="modal-section-4" tabindex="-1" role="dialog" aria-labelledby="modal-section-4" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-4">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DOCUMENTOS FISCAIS</h5>
+                  </div>
+                  <div class="modal-body">
+                    <p>A legislação tributária e fiscal brasileira é conhecida por ser bastante extensa e complexa, o que gera uma
+                      exacerbada burocracia na emissão de documentos fiscais, principalmente do ramo de empresas de transportes.</p>
+                    <p>Além dessa complicação, há constantes atualizações sobre o tema. Uma delas é a criação do Sistema Público de
+                      Escrituração Digital (SPED) que torna eletrônica a emissão e declaração de diversas obrigações legais.</p>
+                    <p>Essa mudança alterou o nome e a forma de emissão dos documentos fiscais pelas companhias e, apesar da
+                      informatização trazer melhorias, demanda que os empreendedores atualizem suas empresas e renovem seu conhecimento
+                      sobre o tema.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

@@ -81,7 +81,15 @@
 .arrow-right-section-3 {
   font-size: 2.3rem;
   color: #fff;
-  margin-top: -.3rem;
+  transition: .6s;
+  margin-bottom: .3rem;
+}
+
+.content-btn-section-3 > h3 {
+  font-size: .8rem;
+  font-weight: 600;
+  color: #fff;
+  margin: .8rem .5rem 0 0;
   transition: .6s;
 }
 
@@ -91,7 +99,21 @@
   color: #000!important;
 }
 
-.btn-section-3:hover .arrow-right-section-3, .btn-section-3:hover .content-btn-section-3 {
+.content-btn-section-3 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: .6s;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-btn-section-3:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-section-3:hover .arrow-right-section-3, .btn-section-3:hover .content-btn-section-3 > h3 {
   color: #000!important;
 }
 

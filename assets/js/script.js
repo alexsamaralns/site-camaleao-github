@@ -1,15 +1,3 @@
-/*window.onscroll = function() {
-    //"use strict";
-    var b = $(window).scrollTop();
-    if( b > 72){
-        $("#topButton").addClass("topButton");
-        $("#topButton").removeClass("hide-up-button");
-    }else if(b == 0) {
-      $("#topButton").addClass("hide-up-button");
-      $("#topButton").removeClass("topButton");
-    }
-};*/
-
 var mounthly = document.getElementById('mounthly');
 var yearly = document.getElementById('yearly');
 var semiannual = document.getElementById('semiannual');

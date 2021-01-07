@@ -103,6 +103,13 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.icons-up-section-2:focus, .icons-down-section-2:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .icon-folhas {
