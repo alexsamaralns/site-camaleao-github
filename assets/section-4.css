@@ -46,7 +46,11 @@
   margin-bottom: 3rem;
 }
 
-.btn-section-4 {
+.content-btn-section-4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: .3rem 1.7rem 0 0;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,16 +64,6 @@
   cursor: pointer;
 }
 
-.content-btn-section-4 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin: .3rem 1.7rem 0 1.8rem;
-  background-color: transparent;
-  border:none;
-  cursor: pointer;
-  transition: .6s;
-}
-
 .content-btn-section-4:focus {
   outline: none;
   box-shadow: none;
@@ -77,13 +71,14 @@
 
 .content-btn-section-4 > h3 {
   transition: .6s;
+  margin-top: .3rem;
 }
 
-.btn-section-4:hover {
+.content-btn-section-4:hover {
   background-color: var(--primary-color);
 }
 
-.btn-section-4:hover .content-btn-section-4 > h3 {
+.content-btn-section-4:hover .btn-section-4 {
   color: #000;
 }
 

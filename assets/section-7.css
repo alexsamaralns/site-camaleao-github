@@ -181,6 +181,7 @@
 .accept-plan:hover {
   cursor: pointer;
   color: #000!important;
+  text-decoration: none;
 }
 
 .accept-plan:hover > p {

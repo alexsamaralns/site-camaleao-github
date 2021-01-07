@@ -1,3 +1,5 @@
 .modal-section-3 {
   background-color: var(--primary-color);
+  width: 55rem!important;
+  padding: 0;
 }
