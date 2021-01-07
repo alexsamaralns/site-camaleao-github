@@ -85,27 +85,35 @@
   margin-bottom: .3rem;
 }
 
-.content-btn-section-3 > h3 {
+.modal-btn-section-3 {
   font-size: .8rem;
   font-weight: 600;
   color: #fff;
-  margin: .8rem .5rem 0 0;
+  margin: -.1rem .5rem 0 0;
   transition: .6s;
 }
 
-.btn-section-3:hover {
+.content-btn-section-3:hover {
   cursor: pointer;
   background-color: var(--primary-color);
   color: #000!important;
 }
 
 .content-btn-section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 18rem;
+  height: 2.1rem;
+  margin-top: 3rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  padding-top: .2rem;
+  transition: .6s;
   background-color: transparent;
-  border: none;
   cursor: pointer;
   transition: .6s;
-  display: flex;
-  flex-direction: row;
 }
 
 .content-btn-section-3:focus {
@@ -113,7 +121,11 @@
   box-shadow: none;
 }
 
-.btn-section-3:hover .arrow-right-section-3, .btn-section-3:hover .content-btn-section-3 > h3 {
+.content-btn-section-3:hover .arrow-right-section-3 {
+  color: #000!important;
+}
+
+.content-btn-section-3:hover .modal-btn-section-3 {
   color: #000!important;
 }
 

@@ -141,6 +141,7 @@
   cursor: pointer;
   background-color: var(--primary-color);
   color: #000!important;
+  text-decoration: none;
 }
 
 .btn-section-6:hover h3 {
