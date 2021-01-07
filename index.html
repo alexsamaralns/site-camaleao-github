@@ -34,9 +34,9 @@
         </button>
         <div class="navbar-options collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mt-2 mt-lg-0">
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link" href="#">Início</a>
-            </li>
+            </li>-->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Ferramentas
@@ -51,7 +51,7 @@
               <a class="nav-link" onclick="scrollToSection('#section-7')">Planos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contatos</a>
+              <a class="nav-link" onclick="scrollToSection('#section-9')">Contato</a>
             </li>
             <li class="nav-item test-link">
               <a class="nav-link test-free" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
@@ -111,7 +111,7 @@
   </section>
 
   <section class="section-2" id="section-2">
-    <div class="content-section-2">
+    <div class="content-section-2 container">
       <div class="left-space">
         <div class="section-2-title">
           <h3 class="title1-section-2">Quanto custa</h3>
@@ -131,26 +131,53 @@
       <div class="right-space">
         <div class="icons-right-space">
           <div class="line-up">
-            <div class="icons-up-section-2">
+            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#exampleModal">
               <img class="icon-folhas" src="./assets/img/folhas.png" alt="nota-fiscal">
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="icons-up-section-2">
+
+            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#exampleModal">
               <img class="icon-fluxo" src="./assets/img/fluxo_caixa.png" alt="nota-fiscal">
-            </div>
-            <div class="icons-up-section-2">
+            </button>
+
+            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#exampleModal">
               <img class="icon-estoque" src="./assets/img/estoque.png" alt="nota-fiscal">
-            </div>
+            </button>
+
           </div>
           <div class="line-down">
-            <div class="icons-down-section-2">
+            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#exampleModal">
               <img class="icon-financeiro" src="./assets/img/financeiro.png" alt="nota-fiscal">
-            </div>
-            <div class="icons-down-section-2">
+            </button>
+
+            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#exampleModal">
               <img class="icon-agenda" src="./assets/img/agenda.png" alt="nota-fiscal">
-            </div>
-            <div class="icons-down-section-2">
+            </button>
+
+            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#exampleModal">
               <img class="icon-cadastro" src="./assets/img/cadastro.png" alt="nota-fiscal">
-            </div>
+            </button>
+
           </div>
         </div>
       </div>
@@ -159,25 +186,19 @@
 
   <section class="section-3">
     <div class="content-section-3 container">
-      <div class="left-section-3"></div>
-      <div class="info-right-section-3">
-        <div class="right-section-3">
-          <div class="title-section-3">
-            <h4 class="title1-section-3">Fazemos da sua missão</h4>
-            <h4 class="title2-section-3">a nossa!</h4>
-          </div>
-          <div class="info-section-3">
-            <p class="info1-section-3">Por um mundo onde as empresas não precisem</p>
-            <p class="info2-section-3">fechar suas portas por um mal gerenciamento.</p>
-          </div>
-          <div class="btn-place-section-3">
-            <div class="btn-section-3">
-              <h3 class="content-btn-section-3">É NISSO QUE ACREDITAMOS</h3><i class="fas fa-caret-right arrow-right-section-3"></i>
-            </div>
-          </div>
+      <div class="info-section-3">
+        <div class="title-section-3">
+          <h4 class="title1-section-3">Fazemos da sua missão</h4>
+          <h4 class="title2-section-3">a nossa!</h4>
         </div>
-        <div class="big-logo-section-3">
-          <img class="icon-logo-section-3" src="./assets/img/biglogowhite.png" alt="logo">
+        <div class="info-section-3">
+          <p class="info1-section-3">Por um mundo onde as empresas não precisem</p>
+          <p class="info2-section-3">fechar suas portas por um mal gerenciamento.</p>
+        </div>
+        <div class="btn-place-section-3">
+          <div class="btn-section-3">
+            <h3 class="content-btn-section-3">É NISSO QUE ACREDITAMOS</h3><i class="fas fa-caret-right arrow-right-section-3"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -465,7 +486,7 @@
     </div>
   </section>
 
-  <section class="section-9">
+  <section class="section-9" id="section-9">
     <div class="content-section-9 container">
       <div class="left-section-9">
         <div class="title-section-9">

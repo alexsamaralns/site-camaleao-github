@@ -102,7 +102,7 @@ function scrollToSection(idSection) {
   const section = document.querySelector(idSection);
   let difference = 0;
   console.log(section.offsetTop);
-  if(idSection == "#section-2") {
+  if(idSection == "#section-2" || idSection == "#section-9") {
     difference = 100;
   }
   window.scroll({

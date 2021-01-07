@@ -5,24 +5,25 @@
   background-size: cover;
   background-image: url(../assets/img/fundo2.png);
   background-repeat: no-repeat;
-  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-section-3 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 100vh;
+  align-items: flex-end;
+  flex-direction: column;
+  position: absolute;
 }
 
-.left-section-3 {
-  width: 100%;
-}
-
-.right-section-3 {
-  width: 100%;
-  margin: 20rem 10rem 0 0;
+.info-section-3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .title-section-3 {
@@ -94,19 +95,8 @@
   color: #000!important;
 }
 
-.big-logo-section-3 {
-  position: relative;
-}
-
-.icon-logo-section-3 {
-  position: relative;
-  top: -8.5rem;
-  right: -9.9rem;
-  height: 24rem;
-  width: 22rem;
-}
-
 .info-right-section-3 {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,15 +107,6 @@
 
   .section-3 {
     height: 50rem;
-  }
-
-  .icon-logo-section-3 {
-    top: 0rem;
-    right: -9.9rem;
-  }
-
-  .right-section-3 {
-    margin: 8rem 10rem 0 0;
   }
 
 }
