@@ -175,9 +175,7 @@
   }
 
   .content-section-2 {
-    display: flex!important;
     flex-direction: column!important;
-    margin: 0 1.5rem;
   }
 
   .left-space {
@@ -185,6 +183,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
   }
 
   .section-2-title, .final-info-section-2 {

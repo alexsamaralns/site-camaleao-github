@@ -129,8 +129,18 @@
     flex-direction: column;
   }
 
+  .btn-place-section-4 {
+    display: flex!important;
+    justify-content: flex-end!important;
+    align-items: center!important;
+  }
+
   .btn-section-4 {
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
+  }
+
+  .content-btn-section-4 {
+    margin: 0 0 1.5rem 0;
   }
 
   .left-section-4 {
@@ -144,8 +154,8 @@
 
   .center-section-4 {
     flex-direction: column;
-    padding: 0;
-    margin-top: 2rem;
+    padding: 1rem 0 3rem 0;
+    margin-top: 2.5rem;
   }
 
   .icon-notas-section-4 {

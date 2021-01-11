@@ -275,7 +275,7 @@
 .video-btn.play-icon-coral { background-color: #fa5876; border-color: #fa5876; }
 .video-btn.play-icon-blue { background-color: #389bf2; border-color: #389bf2; }
 
-@media (max-width: 990px) {
+@media (max-width: 990px) {  
 
   .section-1 {
     background-image: url(../assets/img/fundo1mobile.png)!important;
