@@ -70,28 +70,12 @@ function changePlan(plan) {
     }
 }
 
-/*const saibaMais = document.getElementById('#saibaMais');
-
-saibaMais.addEventListener('click', scrollToSection2);
-
-function scrollToSection2(event) {
-  event.preventDefault();
-  const element = event.target;
-  const id = element.getAttribute('href');
-  const section = document.querySelector(id);
-  console.log(section.offsetTop);
-  window.scroll({
-    top: section.offsetTop - 100,
-    behavior: "smooth"
-  });
-}*/
-
 function scrollToSection(idSection) {
   const section = document.querySelector(idSection);
   let difference = 0;
-  console.log(section.offsetTop);
-  if(idSection == "#section-2" || idSection == "#section-9") {
-    difference = 100;
+  var width = screen.width;
+  if((idSection == "#section-2" || idSection == "#section-9") && width > 990) {
+      difference = 100;
   }
   window.scroll({
     top: section.offsetTop - difference,
