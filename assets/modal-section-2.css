@@ -103,3 +103,20 @@
   transform: translateX(-2px) translateY(-2px);
   box-shadow: 7px 7px 8px -4px rgba(0,0,0,0.75);
 }
+
+@media (max-width: 990px) {
+
+  .modal-dialog-all {
+    width: 80%;
+    left: 2rem;
+  }
+
+  .modal-all {
+    flex-direction: column;
+  }
+
+  .modal-title {
+    font-size: 1rem;
+  }
+
+}
