@@ -72,6 +72,7 @@
 .content-btn-section-4 > h3 {
   transition: .6s;
   margin-top: .3rem;
+  font-size: 1.3rem;
 }
 
 .content-btn-section-4:hover {
