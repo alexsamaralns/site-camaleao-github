@@ -196,6 +196,7 @@
   text-align: center;
   margin-top: 3rem;
   transition: .6s;
+  text-decoration: none!important;
 }
 
 .btn-info-plan > p {

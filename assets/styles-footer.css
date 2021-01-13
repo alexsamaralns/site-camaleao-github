@@ -3,9 +3,10 @@
   background-color: #fff;
 }
 
-h3, p {
+.column-1-title-footer, .column-2-title-footer, .column-3-title-footer, .column-4-title-footer {
   color: #8b8686;
-  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-bottom: -.2rem;
 }
 
 .content-footer {
@@ -28,13 +29,20 @@ h3, p {
   margin-bottom: .5rem;
 }
 
-.column1 > p, .column2 > p, .column3 > p, .column4 > p {
+.column-1-footer, .column-2-footer, .column-3-footer, .column-4-footer, .column-1-footer-p {
   margin-bottom: -.2rem;
+  color: #8b8686;
+  font-size: 1.2rem;
+  text-decoration: none!important;
 }
 
-.column1 > h3, .column2 > h3, .column3 > h3, .column4 > h3 {
-  font-weight: bolder;
-  margin-bottom: -.2rem;
+.column-2-footer:hover {
+  color: var(--primary-color-hover);
+  cursor: pointer;
+}
+
+.column1 > a:hover, .column2 > a:hover, .column3 > a:hover, .column4 > a:hover  {
+  color: var(--primary-color-hover);
 }
 
 .social {

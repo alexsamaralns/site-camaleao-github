@@ -69,10 +69,10 @@
   transition: .6s;
 }
 
-.btn-section-2 > h3 {
+.icons-up-section-2 > h3 {
   font-size: 1.2rem;
   font-weight: 600;
-  margin: -.2rem 1.5rem 0 2.5rem;
+  margin: .35rem 1.5rem 0 2.5rem;
   color: #000!important;
 }
 
@@ -87,7 +87,7 @@
   color: #000!important;
 }
 
-.btn-section-2:hover h3 {
+.icons-up-section-2:hover h3 {
   color: #000!important;
 }
 
@@ -97,6 +97,11 @@
   background-color: var(--primary-color);
   border-radius: 25px;
   margin-top: 2.5rem;
+}
+
+.icons-up-section-2 {
+  display: flex;
+  flex-direction: row;
 }
 
 .icons-up-section-2, .icons-down-section-2 {
