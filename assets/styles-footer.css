@@ -36,13 +36,21 @@
   text-decoration: none!important;
 }
 
-.column-2-footer:hover {
+.column-2-footer:hover, .terms-btn:hover {
   color: var(--primary-color-hover);
   cursor: pointer;
 }
 
 .column1 > a:hover, .column2 > a:hover, .column3 > a:hover, .column4 > a:hover  {
   color: var(--primary-color-hover);
+}
+
+.terms-btn {
+  border: none;
+  color: #8b8686;
+  font-size: 1.2rem;
+  background-color: transparent;
+  padding: 0;
 }
 
 .social {
