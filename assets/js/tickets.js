@@ -17,7 +17,7 @@ let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 var message = document.getElementById('message');
 
-var myJSon = {
+var dados = {
  "type": 2,
  "subject": "Assunto",
  "category": "Dúvida",
@@ -39,22 +39,23 @@ var myJSon = {
         }
     ]
 };
+
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-  console.log(JSON.stringify(myJSon));
-  $.ajax({
-  type: "POST",
-  contentType: 'application/json',
-  url: "https://api.movidesk.com/public/v1/tickets?token=f0ae371e-5848-45eb-a109-b3d66a105d98&returnAllProperties=false",
-  dataType: "json",
-  data: JSON.stringify(myJSon),
-  sucess: function (data){
-      alert('Sucess');
-  },
-  error: function (err) {
-      console.log(err);
-  }
-});
+  fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dados)
+    })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Success:", data);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 });
 
 function postTicket() {
