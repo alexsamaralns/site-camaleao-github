@@ -835,16 +835,16 @@
         </div>
       </div>
       <div class="right-section-9">
-        <form>
+        <form id="form">
           <div class="line1-form">
-            <input class="name-form input-form" type="text" placeholder="Seu Nome*">
-            <input class="email-form input-form" type="email" placeholder="Email*">
+            <input class="name-form input-form" id="name" type="text" placeholder="Seu Nome*">
+            <input class="email-form input-form" id="email" type="email" placeholder="Email*">
           </div>
           <div class="line2-form">
-            <input class="about-form input-form" type="text" placeholder="Sobre*">
+            <input class="about-form input-form" id="subject" type="text" placeholder="Sobre*">
           </div>
           <div class="line3-form">
-            <textarea class="message-form input-form" name="message-form" rows="4" cols="50" placeholder="Sua Mensagem*"></textarea>
+            <textarea class="message-form input-form" id="message" name="message-form" rows="4" cols="50" placeholder="Sua Mensagem*"></textarea>
           </div>
           <input type="submit" class="btn-form" value="ENVIAR">
         </form>
@@ -925,13 +925,15 @@
     </div>
   </footer>
 
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="./assets/js/video-intro.js"></script>
   <script src ="./assets/js/script.js"></script>
   <script src="./assets/js/all.min.js"></script>
-  <!--<script src="./assets/js/tickets.js"></script>-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./assets/js/tickets.js"></script>
 </body>
 
 </html>
