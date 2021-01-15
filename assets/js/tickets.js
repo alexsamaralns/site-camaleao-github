@@ -18,44 +18,75 @@ let subject = document.getElementById('subject');
 var message = document.getElementById('message');
 
 var dados = {
- "type": 2,
- "subject": "Assunto",
- "category": "Dúvida",
- "urgency": "Baixa",
- "status": "Aguardando",
- "justification": "Retorno do cliente",
- "createdDate": "2021-01-15T14:36:01+00:00",
- "createdBy":{
-     "id":"7d1d8aba-cbdd-44cf-"
+  "type": 2,
+  "subject": "Assunto",
+  "category": "Dúvida",
+  "urgency": "Baixa",
+  "status": "Aguardando",
+  "justification": "Retorno do cliente",
+  "createdDate": "2021-01-15T14:36:01+00:00",
+  "createdBy": {
+    "id": "7d1d8aba-cbdd-44cf-"
   },
-  "clients": [
-        {
-            "id":"7d1d8aba-cbdd-44cf-"
-        }
-    ],"Actions" :[
-        {
-            "type":2,
-            "Description" :"COLOCAR AQUI A MENSAGEM DO CLIENTE"
-        }
-    ]
+  "clients": [{
+    "personType": 1,
+    "profileType": 2,
+    "businessName": "MARCOS JUNIOR DA SILVA",
+    "email": "junior000638@gmail.com",
+    "phone": "(37)998429353"
+  }],
+  "Actions": [{
+    "type": 2,
+    "Description": "COLOCAR AQUI A MENSAGEM DO CLIENTE"
+  }]
 };
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-  fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(dados)
-    })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log("Success:", data);
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-    });
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+
+  var raw = JSON.stringify({
+    "type": 2,
+    "subject": "Assunto",
+    "category": "Dúvida",
+    "urgency": "Baixa",
+    "status": "Aguardando",
+    "justification": "Retorno do cliente",
+    "createdDate": "2021-01-15T14:36:01+00:00",
+    "createdBy": {
+      "id": "7d1d8aba-cbdd-44cf-",
+      "personType": 1,
+      "profileType": 2,
+      "businessName": "MARCOS JUNIOR DA SILVA",
+      "email": "junior000638@gmail.com",
+      "phone": "(37)998429353"
+    },
+    "clients": [{
+      "id": "7d1d8aba-cbdd-44cf-",
+      "personType": 1,
+      "profileType": 2,
+      "businessName": "MARCOS JUNIOR DA SILVA",
+      "email": "junior000638@gmail.com",
+      "phone": "(37)998429353"
+    }],
+    "Actions": [{
+      "type": 2,
+      "Description": "MENSAGEM ALTERADA"
+    }]
+  });
+
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow'
+  };
+
+  fetch("https://api.movidesk.com/public/v1/tickets?token=f0ae371e-5848-45eb-a109-b3d66a105d98&returnAllProperties=false", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
 });
 
 function postTicket() {
