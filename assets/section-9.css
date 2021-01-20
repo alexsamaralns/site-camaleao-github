@@ -48,7 +48,7 @@
   margin-right: .4rem;
 }
 
-.line1-form {
+.line1-form, .line2-form {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,6 +1,3 @@
-let token = "f0ae371e-5848-45eb-a109-b3d66a105d98";
-let url = "https://api.movidesk.com/public/v1/tickets?token=" + token + "&returnAllProperties=false";
-
 var data = new Date();
 var day = data.getDate();
 
@@ -16,80 +13,63 @@ let name = document.getElementById('name');
 let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 var message = document.getElementById('message');
-
-var dados = {
-  "type": 2,
-  "subject": "Assunto",
-  "category": "Dúvida",
-  "urgency": "Baixa",
-  "status": "Aguardando",
-  "justification": "Retorno do cliente",
-  "createdDate": "2021-01-15T14:36:01+00:00",
-  "createdBy": {
-    "id": "7d1d8aba-cbdd-44cf-"
-  },
-  "clients": [{
-    "personType": 1,
-    "profileType": 2,
-    "businessName": "MARCOS JUNIOR DA SILVA",
-    "email": "junior000638@gmail.com",
-    "phone": "(37)998429353"
-  }],
-  "Actions": [{
-    "type": 2,
-    "Description": "COLOCAR AQUI A MENSAGEM DO CLIENTE"
-  }]
-};
+var tel = document.getElementById('tel');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-  var myHeaders = new Headers();
-  myHeaders.append("Content-Type", "application/json");
 
-  var raw = JSON.stringify({
-    "type": 2,
-    "subject": "Assunto",
-    "category": "Dúvida",
-    "urgency": "Baixa",
-    "status": "Aguardando",
-    "justification": "Retorno do cliente",
-    "createdDate": "2021-01-15T14:36:01+00:00",
-    "createdBy": {
-      "id": "7d1d8aba-cbdd-44cf-",
-      "personType": 1,
-      "profileType": 2,
-      "businessName": "MARCOS JUNIOR DA SILVA",
-      "email": "junior000638@gmail.com",
-      "phone": "(37)998429353"
-    },
-    "clients": [{
-      "id": "7d1d8aba-cbdd-44cf-",
-      "personType": 1,
-      "profileType": 2,
-      "businessName": "MARCOS JUNIOR DA SILVA",
-      "email": "junior000638@gmail.com",
-      "phone": "(37)998429353"
-    }],
-    "Actions": [{
-      "type": 2,
-      "Description": "MENSAGEM ALTERADA"
-    }]
-  });
+  if(name.value != '' && email.value != '' && subject.value != '' && message.value != '' && tel.value != '') {
 
-  var requestOptions = {
-    method: 'POST',
-    headers: myHeaders,
-    body: raw,
-    redirect: 'follow'
-  };
+    var postForm = {
+      'name': name.value,
+      'email': email.value,
+      'subject': subject.value,
+      'message': message.value,
+      'tel': tel.value,
+      'datetime': dateTime
+    };
 
-  fetch("https://api.movidesk.com/public/v1/tickets?token=f0ae371e-5848-45eb-a109-b3d66a105d98&returnAllProperties=false", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
+    $.ajax({
+      type: 'POST',
+      url: '../assets/php/form.php', //'https://www.sistemacamaleao.com/form.php',
+      data: postForm,
+      dataType: 'json',
+      success: function(data) {
+        if (data.success) {
+          document.getElementById('name').value = '';
+          document.getElementById('email').value = '';
+          document.getElementById('subject').value = '';
+          document.getElementById('message').value = '';
+          document.getElementById('tel').value = '';
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Sua mensagem foi recebida com sucesso, você receberá contato pelo seu e-mail e/ou' +
+              'telefone em breve! Obrigado.',
+            showConfirmButton: true
+          })
+        } else {
+          Swal.fire({
+            position: 'center',
+            icon: 'warning',
+            title: 'Algo deu errado!',
+            showConfirmButton: true
+          })
+        }
+      }
+    });
+    event.preventDefault();
+
+  }else {
+
+    Swal.fire({
+      position: 'center',
+      icon: 'error',
+      title: 'Por favor, preencha todos os campos!',
+      showConfirmButton: true
+    });
+    event.preventDefault();
+
+  }
+
 });
-
-function postTicket() {
-  //console.log("message = " + message);
-  /**/
-}

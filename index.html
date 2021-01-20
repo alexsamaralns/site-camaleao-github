@@ -837,11 +837,12 @@
       <div class="right-section-9">
         <form id="form">
           <div class="line1-form">
-            <input class="name-form input-form" id="name" type="text" placeholder="Seu Nome*">
-            <input class="email-form input-form" id="email" type="email" placeholder="Email*">
+            <input class="name-form input-form" id="name" name="name" type="text" placeholder="Seu Nome*">
+            <input class="email-form input-form" id="email" name="email" type="email" placeholder="Email*">
           </div>
           <div class="line2-form">
-            <input class="about-form input-form" id="subject" type="text" placeholder="Sobre*">
+            <input class="name-form input-form" id="subject" name="subject" type="text" placeholder="Assunto*">
+            <input class="email-form input-form" id="tel" name="tel" type="text" placeholder="Telefone*">
           </div>
           <div class="line3-form">
             <textarea class="message-form input-form" id="message" name="message-form" rows="4" cols="50" placeholder="Sua Mensagem*"></textarea>
@@ -925,7 +926,6 @@
     </div>
   </footer>
 
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -934,6 +934,7 @@
   <script src ="./assets/js/script.js"></script>
   <script src="./assets/js/all.min.js"></script>
   <script src="./assets/js/tickets.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>
