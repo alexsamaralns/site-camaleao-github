@@ -13,63 +13,140 @@ let name = document.getElementById('name');
 let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 var message = document.getElementById('message');
-var tel = document.getElementById('tel');
+let tel = document.getElementById('tel');
+let clickControl = 0;
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
 
-  if(name.value != '' && email.value != '' && subject.value != '' && message.value != '' && tel.value != '') {
+  if (clickControl === 0) {
 
-    var postForm = {
-      'name': name.value,
-      'email': email.value,
-      'subject': subject.value,
-      'message': message.value,
-      'tel': tel.value,
-      'datetime': dateTime
-    };
+    clickControl = 1;
 
-    $.ajax({
-      type: 'POST',
-      url: '../assets/php/form.php', //'https://www.sistemacamaleao.com/form.php',
-      data: postForm,
-      dataType: 'json',
-      success: function(data) {
-        if (data.success) {
-          document.getElementById('name').value = '';
-          document.getElementById('email').value = '';
-          document.getElementById('subject').value = '';
-          document.getElementById('message').value = '';
-          document.getElementById('tel').value = '';
-          Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Sua mensagem foi recebida com sucesso, você receberá contato pelo seu e-mail e/ou' +
-              'telefone em breve! Obrigado.',
-            showConfirmButton: true
-          })
-        } else {
-          Swal.fire({
-            position: 'center',
-            icon: 'warning',
-            title: 'Algo deu errado!',
-            showConfirmButton: true
-          })
-        }
-      }
-    });
-    event.preventDefault();
+    if (name.value !== '' && email.value !== '' && subject.value !== '' && message.value !== '' && tel.value !== '') {
 
-  }else {
+        var postForm = {
+          'name': name.value,
+          'email': email.value,
+          'subject': subject.value,
+          'message': message.value,
+          'tel': tel.value,
+          'datetime': dateTime
+        };
 
-    Swal.fire({
-      position: 'center',
-      icon: 'error',
-      title: 'Por favor, preencha todos os campos!',
-      showConfirmButton: true
-    });
-    event.preventDefault();
+        $.ajax({
+          type: 'POST',
+          url: '../assets/php/form.php', //https://www.sistemacamaleao.com/php/form.php',
+          data: postForm,
+          dataType: 'json',
+          success: function(data) {
+            if (data.success) {
+              clickControl = 0;
+              document.getElementById('name').value = '';
+              document.getElementById('email').value = '';
+              document.getElementById('subject').value = '';
+              document.getElementById('message').value = '';
+              document.getElementById('tel').value = '';
+              launch_toast_success();
+            } else {
+              clickControl = 0;
+              launch_toast_error();
+            }
+          }
+        });
+
+      event.preventDefault();
+
+    } else {
+
+      clickControl = 0;
+
+      launch_toast_warning();
+
+      event.preventDefault();
+
+    }
 
   }
 
 });
+
+function launch_toast_success() {
+  var x = document.getElementById("toast-success");
+  var y = document.getElementById("desc-success");
+  /*var p1 = document.getElementById("success-line1");
+  var p2 = document.getElementById("success-line2");
+  var p3 = document.getElementById("success-line3");
+  var p4 = document.getElementById("success-line4");
+  var p5 = document.getElementById("success-line5");*/
+  x.className = "show";
+  setTimeout(function() {
+    if(screen.width <= 990) {
+      y.innerText = `
+        Sua mensagem foi recebida
+        com sucesso!
+        Em breve entraremos
+        em contato.
+        Obrigado!
+      `;
+    }else {
+      y.innerText = `
+        Sua mensagem foi recebida com sucesso! Em breve entraremos em contato. Obrigado!
+      `;
+    }
+  }, 600);
+  hiden_text("desc-success")
+  setTimeout(function() {
+    x.className = x.className.replace("show", "");
+    y.innerText = ``;
+  }, 4800);
+}
+
+function launch_toast_warning() {
+  var x = document.getElementById("toast-warning");
+  var y = document.getElementById("desc-warning");
+  x.className = "show";
+  setTimeout(function() {
+    if(screen.width <= 990) {
+      y.innerText = `
+        Por favor,
+        preencha todos os campos!
+      `;
+    }else {
+      y.innerText = `Por favor, preencha todos os campos!`;
+    }
+  }, 600);
+  hiden_text("desc-warning")
+  setTimeout(function() {
+    y.innerText = ``;
+    x.className = x.className.replace("show", "");
+  }, 4800);
+}
+
+function launch_toast_error() {
+  var x = document.getElementById("toast-error");
+  var y = document.getElementById("desc-error");
+  x.className = "show";
+  setTimeout(function() {
+    if(screen.width <= 990) {
+      y.innerText = `
+        Algo deu errado!
+        Tente novamente.
+      `;
+    }else {
+      y.innerText = `Algo deu errado! Tente novamente.`;
+    }
+  }, 600);
+  hiden_text("desc-error")
+  setTimeout(function() {
+    y.innerText = ``;
+    x.className = x.className.replace("show", "");
+  }, 4800);
+}
+
+function hiden_text(id) {
+  var y = document.getElementById(id);
+  setTimeout(function() {
+    y.innerText = "";
+  }, 4300);
+}

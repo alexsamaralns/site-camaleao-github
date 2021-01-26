@@ -113,7 +113,7 @@
 @media (max-width: 990px) {
 
   .section-9 {
-    height: 40rem;
+    height: 42rem;
   }
 
   .content-section-9 {
@@ -141,7 +141,7 @@
     margin: 2rem 0 -.3rem 0;
   }
 
-  .line1-form {
+  .line1-form, .line2-form {
     flex-direction: column;
   }
 
