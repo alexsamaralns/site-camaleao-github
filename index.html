@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="./assets/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="././assets/styles-navbar.css">
+  <link rel="stylesheet" href="./assets/styles-navbar.css">
   <link rel="stylesheet" href="./assets/section-1.css">
+  <link rel="stylesheet" href="./assets/modal-section-2.css">
   <link rel="stylesheet" href="./assets/section-2.css">
+  <link rel="stylesheet" href="./assets/modal-section-3.css">
   <link rel="stylesheet" href="./assets/section-3.css">
+  <link rel="stylesheet" href="./assets/modal-section-4.css">
   <link rel="stylesheet" href="./assets/section-4.css">
   <link rel="stylesheet" href="./assets/section-5.css">
   <link rel="stylesheet" href="./assets/section-6.css">
@@ -18,47 +22,42 @@
   <link rel="stylesheet" href="./assets/section-8.css">
   <link rel="stylesheet" href="./assets/section-9.css">
   <link rel="stylesheet" href="./assets/styles-footer.css">
+  <link rel="stylesheet" href="./assets/success-toast.css">
+  <link rel="stylesheet" href="./assets/warning-toast.css">
+  <link rel="stylesheet" href="./assets/error-toast.css">
   <title>Sistema Camaleão</title>
 </head>
 
 <body>
-  <section class="section-header">
-    <div class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="hide-up-button" id="topButton" onclick="scrollToSection('#section-header')">
+    <img class="up" src="./assets/img/up.png" alt="up">
+  </div>
+  <section class="section-header" id="section-header">
+    <div class="header container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light">
         <img class="logo-navbar" src="./assets/img/logo.png" alt="logo">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <img class="menu-navbar" src="./assets/img/menu.png" alt="menu">
         </button>
         <div class="navbar-options collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mt-2 mt-lg-0">
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link" href="#">Início</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Ferramentas
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Ferramentas 1</a>
-                <a class="dropdown-item" href="#">Ferramentas 2</a>
-                <a class="dropdown-item" href="#">Ferramentas 3</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Planos
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Planos 1</a>
-                <a class="dropdown-item" href="#">Planos 2</a>
-                <a class="dropdown-item" href="#">Planos 3</a>
-              </div>
+            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" onclick="scrollToSection('#section-2')">Ferramentas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contatos</a>
+              <a class="nav-link" onclick="scrollToSection('#section-7')">Planos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://blaster.movidesk.com/kb" target="_blank">Central de ajuda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="scrollToSection('#section-9')">Contato</a>
             </li>
             <li class="nav-item test-link">
-              <a class="nav-link test-free" href="#">Teste Grátis</a>
+              <a class="nav-link test-free" id="test-free-btn" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
             </li>
           </ul>
         </div>
@@ -66,8 +65,8 @@
     </div>
   </section>
 
-  <section class="section-1">
-    <div class="content-section-1">
+  <section class="section-1" id="section-1">
+    <div class="content-section-1 container">
       <div class="row-content">
         <div class="left-content">
           <h3 class="info-section-1">
@@ -92,7 +91,6 @@
               <span>X</span>
             </div>
             <div class="hero-8-img wow fadeInRight intro-video" id="player" data-wow-delay="0.5s">
-              <!--<img class="img-fluid" src="images/hero-8-img.png" alt="hero-image">-->
               <iframe class="intro-video" src="https://www.youtube.com/embed/am_s_0EBbGw" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
               </iframe>
             </div>
@@ -105,9 +103,9 @@
               completo sistema de gestão
             </h3>
             <div class="right-last-line-info-section-1">
-              <h3 class="last-line-right-info-section-1">
-                Saiba mais
-              </h3>
+              <a class="last-line-right-info-section-1" id="saibaMais" onclick="scrollToSection('#section-2')">
+                <h3 href="#section-2">Saiba mais</h3>
+              </a>
             </div>
           </div>
         </div>
@@ -115,8 +113,8 @@
     </div>
   </section>
 
-  <section class="section-2">
-    <div class="content-section-2">
+  <section class="section-2" id="section-2">
+    <div class="content-section-2 container">
       <div class="left-space">
         <div class="section-2-title">
           <h3 class="title1-section-2">Quanto custa</h3>
@@ -130,32 +128,294 @@
           <p class="final-info2-section-2">Aproveite mais seu dia!</p>
         </div>
         <div class="btn-section-2">
-          <h3>Ver todos</h3><i class="fas fa-caret-right arrow-right-section-2"></i>
+          <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#verTodos">
+            <h3>Ver todos</h3><i class="fas fa-caret-right arrow-right-section-2"></i>
+          </button>
         </div>
       </div>
       <div class="right-space">
         <div class="icons-right-space">
           <div class="line-up">
-            <div class="icons-up-section-2">
+            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#notaFiscal">
               <img class="icon-folhas" src="./assets/img/folhas.png" alt="nota-fiscal">
+            </button>
+
+            <!-- Modal Nota Fiscal -->
+            <div class="modal fade" id="notaFiscal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">NOTA FISCAL</h5>
+                    <img class="icon-modal-2 icon-sell" src="./assets/img/folhasSmall.png" alt="nota-fiscal">
+                  </div>
+                  <div class="modal-body">
+                    <p>A tributação começa na Nota Fiscal eletrônica, ou seja, a emissão do documento é a prova de que uma
+                      empresa paga seus tributos corretamente.</p>
+                    <p>As Notas Fiscais também são essenciais para manter a empresa em dia, ajudando a gerar confiança para
+                      os fornecedores e clientes.</p>
+                    <p>Esse documento fiscal também é um direito do consumidor que, em caso de defeito da mercadoria adquirida,
+                      poderá exigir a substituição ou restituição da quantia paga ou abatimento proporcional do preço, mediante a
+                      nota fiscal.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="nav-link test-free-modal" id="test-free-btn" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="icons-up-section-2">
-              <img class="icon-fluxo" src="./assets/img/fluxo_caixa.png" alt="nota-fiscal">
+
+            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#fluxoCaixa">
+              <img class="icon-fluxo" src="./assets/img/fluxo_caixa.png" alt="fluxo-caixa">
+            </button>
+
+            <!-- Modal Fluxo De Caixa -->
+            <div class="modal fade" id="fluxoCaixa" tabindex="-1" role="dialog" aria-labelledby="fluxoCaixa" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">FLUXO DE CAIXA</h5>
+                    <img class="icon-modal-2 icon-sell" src="./assets/img/fluxo_caixaSmall.png" alt="nota-fiscal">
+                  </div>
+                  <div class="modal-body">
+                    <p>Fluxo de caixa é uma ferramenta de controle financeiro que mostra, detalhadamente, os valores que entram e saem
+                      de uma empresa e seu cálculo é feito a partir dos saldos existentes em contas bancárias e dinheiro disponível na
+                      empresa.</p>
+                    <p>Por isso é importante ter um controle sobre o fluxo de caixa, pois é por meio dele que o empresário mantém a vida
+                      financeira do empreendimento organizada. Assim, ele fica ciente de todo o dinheiro da empresa, tanto as receitas e
+                      quanto as dívidas, a fim de tomar as melhores decisões na hora de remanejar os valores para setores que a empresa
+                      necessite, por exemplo, além de impedir, que você atrase os pagamentos dos impostos que incidem sobre a sua empresa.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="nav-link test-free-modal" id="test-free-btn" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="icons-up-section-2">
-              <img class="icon-estoque" src="./assets/img/estoque.png" alt="nota-fiscal">
+
+            <button type="button" class="icons-up-section-2" data-toggle="modal" data-target="#estoque">
+              <img class="icon-estoque" src="./assets/img/estoque.png" alt="estoque">
+            </button>
+
+            <!-- Modal Estoque -->
+            <div class="modal fade" id="estoque" tabindex="-1" role="dialog" aria-labelledby="estoque" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ESTOQUE</h5>
+                    <img class="icon-modal-2 icon-sell" src="./assets/img/estoqueSmall.png" alt="estoque">
+                  </div>
+                  <div class="modal-body">
+                    <p>Controle de estoque consiste em realizar a gestão de mercadorias de uma empresa. Em outras palavras, registrar
+                      o fluxo de entrada e saída de artigos para viabilizar condições que otimizem o seu uso eficiente e minimizem a
+                      necessidade de investimento de capital. Daí a importância do controle de estoque ser tão grande.</p>
+                    <p>Um rigoroso controle desse processo de gestão é fundamental para potencializar a rentabilidade de uma organização
+                      e reforçar a sua estrutura de negócio.</p>
+                    <p>Apesar disso, ainda o controle de estoque é ignorado em muitas empresas pelo simples desconhecimento dos
+                      princípios básicos de uma boa administração.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="nav-link test-free-modal" id="test-free-btn" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
           <div class="line-down">
-            <div class="icons-down-section-2">
+            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#financeiro">
               <img class="icon-financeiro" src="./assets/img/financeiro.png" alt="nota-fiscal">
+            </button>
+
+            <!-- Modal Financeiro -->
+            <div class="modal fade" id="financeiro" tabindex="-1" role="dialog" aria-labelledby="financeiro" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">FINANCEIRO</h5>
+                    <img class="icon-modal-2 icon-sell" src="./assets/img/financeiroSmall.png" alt="financeiro">
+                  </div>
+                  <div class="modal-body">
+                    <p>A falta de controle financeiro e planejamento é o principal motivo de muitas empresas fecharem as portas antes
+                      mesmo de alcançarem os primeiros anos de funcionamento.</p>
+                    <p>A inexistência ou mesmo a insuficiência de um plano financeiro inviabiliza que muitas organizações possam dirigir,
+                      controlar e coordenar ações para a execução dos seus objetivos.</p>
+                    <p>É importante destacar que planos financeiros de curto prazo custeiam os planos financeiros de longo prazo,
+                      ajudando a nortear as melhores alternativas de crescimento, a priorizar objetivos e a dar uma direção mais assertiva
+                      para a empresa.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="nav-link test-free-modal" id="test-free-btn" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="icons-down-section-2">
+
+            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#agenda">
               <img class="icon-agenda" src="./assets/img/agenda.png" alt="nota-fiscal">
+            </button>
+
+            <!-- Modal Agenda -->
+            <div class="modal fade" id="agenda" tabindex="-1" role="dialog" aria-labelledby="agenda" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">AGENDA</h5>
+                    <img class="icon-modal-2 icon-sell" src="./assets/img/agendaSmall.png" alt="agenda">
+                  </div>
+                  <div class="modal-body">
+                    <p>Antes de conferir como uma agenda eletrônica pode mudar para sempre sua forma de organizar consultas, é
+                      preciso entender como ela funciona.</p>
+                    <p>Por isso, esqueça tabelas complicadas, agendas de papel e listas intermináveis que só atrapalham quando você
+                      precisa encontrar informações não só de consultas, mas de cadastros dos pacientes.</p>
+                    <p>Com uma agenda você integra processos e encontra tudo no mesmo lugar. Com acesso 24h de forma totalmente online,
+                      você pode registrar consultas e compartilhar o acesso com outros profissionais.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="nav-link test-free-modal" id="test-free-btn" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="icons-down-section-2">
+
+            <button type="button" class="icons-down-section-2" data-toggle="modal" data-target="#cadastros">
               <img class="icon-cadastro" src="./assets/img/cadastro.png" alt="nota-fiscal">
+            </button>
+
+            <!-- Modal Cadastros -->
+            <div class="modal fade" id="cadastros" tabindex="-1" role="dialog" aria-labelledby="cadastros" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">CADASTROS</h5>
+                    <img class="icon-modal-2 icon-sell" src="./assets/img/cadastroSmall.png" alt="cadastros">
+                  </div>
+                  <div class="modal-body">
+                    <p>Ter uma base de compradores fiéis e satisfeitos é essencial para o sucesso de qualquer empresa. Dentre as
+                      inúmeras possibilidades para interagir com os consumidores, destaca-se o cadastro de cliente. Trata-se de uma
+                      maneira de o negócio conhecer melhor a pessoa que está consumindo seus produtos e serviços.</p>
+                    <p>Por meio do cadastro de cliente, a organização pode traçar estratégias mais acertadas para criar empatia e
+                      aumentar as vendas, alcançando os resultados esperados. Com essa prática, a empresa passa a ter um contato mais
+                      próximo e personalizado com o consumidor, o que é essencial para a estratégia de qualquer organização que busca se
+                      consolidar no mercado.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="nav-link test-free-modal" id="test-free-btn" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- Modal Ver Todos -->
+            <div class="modal fade" id="verTodos" tabindex="-1" role="dialog" aria-labelledby="verTodos" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-2 modal-dialog-all">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">FUNCIONALIDADES</h5>
+                    <img class="icon-modal-all-title" src="./assets/img/functionality.png" alt="verTodos">
+                  </div>
+                  <div class="modal-all">
+                    <div class="func-column-1">
+                      <div class="left-1 all-info">
+                        <div class="img-all">
+                          <img class="icon-all" src="./assets/img/folhasSmall.png" alt="folhas">
+                        </div>
+                        <h3 class="title-modal-all">Nota Fiscal</h3>
+                        <p class="modal-all-info">Emita notas fiscais</p>
+                        <p class="center-line-info modal-all-info">com muita facilidade</p>
+                        <p class="modal-all-info">e sem complicação.</p>
+                      </div>
+                      <div class="left-2 all-info">
+                        <div class="img-all">
+                          <img class="icon-all-2" src="./assets/img/billing-machine.png" alt="billing">
+                        </div>
+                        <h3 class="title-modal-all">Frente de Caixa</h3>
+                        <p class="modal-all-info">Movimentação e controle de caixa</p>
+                        <p class="center-line-info modal-all-info">seja loja física ou virtual</p>
+                        <p class="modal-all-info">registrando suas vendas.</p>
+                      </div>
+                      <div class="left-3 all-info">
+                        <div class="img-all">
+                          <img class="icon-all" src="./assets/img/financeiroSmall.png" alt="financeiro">
+                        </div>
+                        <h3 class="title-modal-all">Finanças</h3>
+                        <p class="modal-all-info">Controle sem preocupações</p>
+                        <p class="center-line-info modal-all-info">as suas contas e orçamentos</p>
+                        <p class="modal-all-info">com tranquilidade e transparência.</p>
+                      </div>
+                    </div>
+                    <div class="func-column-2">
+                      <div class="center-1 all-info">
+                        <div class="img-all">
+                          <img class="icon-all" src="./assets/img/estoqueSmall.png" alt="estoque">
+                        </div>
+                        <h3 class="title-modal-all">Estoque</h3>
+                        <p class="modal-all-info">Cadastre e controle as</p>
+                        <p class="center-line-info modal-all-info">informações com muita organização</p>
+                        <p class="modal-all-info">os produtos de seu estoque.</p>
+                      </div>
+                      <div class="center-2 all-info">
+                        <div class="img-all">
+                          <img class="icon-all-2" src="./assets/img/buy.png" alt="buy">
+                        </div>
+                        <h3 class="title-modal-all">Pedidos</h3>
+                        <p class="modal-all-info">Com facilidade e organização seus </p>
+                        <p class="center-line-info modal-all-info">pedidos podem ser acessados</p>
+                        <p class="modal-all-info">e criados a partir de uma ferramenta específica.</p>
+                      </div>
+                      <div class="center-3 all-info">
+                        <div class="img-all">
+                          <img class="icon-all" src="./assets/img/cadastroSmall.png" alt="cadastro">
+                        </div>
+                        <h3 class="title-modal-all">Cadastros</h3>
+                        <p class="modal-all-info">Cadastre usuários, clientes, fornecedores</p>
+                        <p class="center-line-info modal-all-info">e vendedores. Tenhas as informações</p>
+                        <p class="modal-all-info">rapidamente ao seu alcance.</p>
+                      </div>
+                    </div>
+                    <div class="func-column-3">
+                      <div class="right-1 all-info">
+                        <div class="img-all">
+                          <img class="icon-all-2" src="./assets/img/sell.png" alt="sell">
+                        </div>
+                        <h3 class="title-modal-all">Vendas</h3>
+                        <p class="modal-all-info">Gerenciamento de vendas,</p>
+                        <p class="center-line-info modal-all-info">controle de comissão e orçamentos.</p>
+                        <p class="modal-all-info">Praticidade no processo.</p>
+                      </div>
+                      <div class="right-2 all-info">
+                        <div class="img-all">
+                          <img class="icon-all-2" src="./assets/img/service-tools.png" alt="service">
+                        </div>
+                        <h3 class="title-modal-all">Serviços</h3>
+                        <p class="modal-all-info">Gestão aprimorada para seu</p>
+                        <p class="center-line-info modal-all-info">negócio com uma vasta</p>
+                        <p class="modal-all-info">opção de serviços.</p>
+                      </div>
+                      <div class="right-3 all-info">
+                        <div class="img-all">
+                          <img class="icon-all-2" src="./assets/img/factory.png" alt="factory">
+                        </div>
+                        <h3 class="title-modal-all">Ordem de Produção</h3>
+                        <p class="modal-all-info">Organize e controle</p>
+                        <p class="center-line-info modal-all-info">com agilidade sua produção</p>
+                        <p class="modal-all-info">ou processos comerciais.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="nav-link test-free-modal" id="test-free-btn" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -163,9 +423,8 @@
   </section>
 
   <section class="section-3">
-    <div class="content-section-3">
-      <div class="left-section-3"></div>
-      <div class="right-section-3">
+    <div class="content-section-3 container">
+      <div class="info-section-3">
         <div class="title-section-3">
           <h4 class="title1-section-3">Fazemos da sua missão</h4>
           <h4 class="title2-section-3">a nossa!</h4>
@@ -175,10 +434,92 @@
           <p class="info2-section-3">fechar suas portas por um mal gerenciamento.</p>
         </div>
         <div class="btn-place-section-3">
-          <div class="btn-section-3">
-            <h3 class="content-btn-section-3">É NISSO QUE ACREDITAMOS</h3><i class="fas fa-caret-right arrow-right-section-3"></i>
+
+            <button type="button" class="content-btn-section-3" data-toggle="modal" data-target="#modal-section-3">
+              <h3 class="modal-btn-section-3">É NISSO QUE ACREDITAMOS</h3><i class="fas fa-caret-right arrow-right-section-3"></i>
+            </button>
+
+            <!-- Modal Section 3 -->
+            <div class="modal fade" id="modal-section-3" tabindex="-1" role="dialog" aria-labelledby="modal-section-3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content modal-section-3">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">NOSSA MISSÃO</h5>
+                    <img class="icon-modal-all-title" src="./assets/img/mission.png" alt="mission">
+                  </div>
+                  <div class="modal-body">
+                    <p>Nós vamos te dar a liberdade que você deseja!<br>
+                      Proposta muito boa para ser verdade né?!<br><br>
+
+                      Realmente é, mas isso não depende só da gente, criamos uma plataforma para quem realmente quer
+                      mudar de vida, se libertar de uma rotina cheia de tédio e poder realizar suas tarefas de onde estiver
+                      e quando quiser! Criamos uma plataforma com todas as ferramentas necessárias para você poder trabalhar e
+                      resolver qualquer questão da sua empresa de uma forma simples, rápida e remota! Nosso foco é atingir
+                      micro e pequenos empreendedores que desejam otimizar seu tempo e atingir melhores resultados com sua empresa!<br><br>
+
+                      Você deve estar se perguntando "Como?"<br><br>
+
+                      Nosso sistema agiliza e organiza muito bem os procedimentos seja para uso no setor comercial ou
+                      industrial. Controla acesso de usuários, podendo separar por setor. Separação mais detalhadas de
+                      produtos e/ou serviços. Controle de entrada de mercadorias mais apurado evitando compras em
+                      excesso. Controle de vendas e devolução, facilidade em executar vendas aos clientes e buscar um
+                      histórico de compras. Em contas a pagar e receber possui todas as ferramentas necessárias pra desenvolver
+                      os trabalhos financeiros. Conta bancária auxilia muito bem na conciliação bancária. Emissão de notas
+                      fiscais conforme as necessidades do estabelecimento, a emissão é bem fácil no setor de Fiscal.
+                      Relatórios com informações relevantes para os setores disponibilizados pelo sistema são bem intuitivos
+                      nessa opção.<br><br>
+
+                      <strong>Cadastros</strong><br>
+                      Cadastro fácil e rápido. Separados por categorias como Funcionário, Fornecedor, Cliente e
+                      Transportadora. Informações completas que atende todos os parâmetros necessários. Em Funcionário,
+                      o cadastro é subdividido em Profissão, Setores, dados do Funcionário, Grupos de Usuários e Usuários.<br><br>
+
+                      <strong>Produtos e Serviços</strong><br>
+                      Com as opções apresentadas, pode-se obter mais detalhes em cadastrar os produtos no sistema.
+                      Nessa opção de Produtos/Serviços é cadastrado a Marca, Unidade Comercial, Categoria, Serviço,
+                      Tipo de Calçado e Produto.<br><br>
+
+                      <strong>Entradas de Mercadorias</strong><br>
+                      Controle de entrada de mercadorias vinculando com o fornecedor e a nota fiscal, data da compra
+                      e situação. Conta também com demais campos para total de dados fiscais como informações de imposto.<br><br>
+
+                      <strong>Vendas</strong><br>
+                      Aqui teremos as seguintes opções: Vendas, Termo de troca, Devolução, Orçamento, Condicional e Pedido.
+                      Cada uma dessas opções se enquadra muito bem nos parâmetros necessários de uma venda.
+                      Facilitando o processo seja para concretizar uma venda ou orçamento.<br><br>
+
+                      <strong>Ordem de Serviço</strong><br>
+                      Para fins de prestação de serviço, essa opção auxilia no cadastro de tal modalidade.
+                      Conta com a opção de inserir um produto e/ou um serviço. Outra opção é o Recibo de garantia
+                      para redigir um relatório de termos de garantia.<br><br>
+
+                      <strong>Financeiro</strong><br>
+                      Com as principais ferramentas para este setor, aqui está disponível as opções de Contas a Pagar,
+                      Contas a Receber, Conta Bancária e Crédito Cliente. Em Contas a Pagar e Contas a Receber existe
+                      as subcategorias Categoria e Contas, facilitando uma separação de seus documentos além de outras
+                      mais voltadas a cada tipo.<br><br>
+
+                      <strong>Fiscal</strong><br>
+                      NF-e, NFC-e e Grupo de Tributação são as opções para esse setor do sistema. Em NF-e e NFC-e, é
+                      possível emitir Notas Fiscais com muita praticidade. Na opção de Grupo de Tributação é cadastrado
+                      as informações para cada parâmetro como ICMS, ICMS UF, IPI, PIS, PIS ST, COFINS, COFINS ST,
+                      ISSQN, CFOP e Informações adicionais assim automatizando processos fiscais.<br><br>
+
+                      <strong>Relatórios</strong><br>
+                      Com essa ferramenta, gerar relatórios é muito fácil. Os relatórios podem ser de compra, venda,
+                      ordem de serviço, contas a pagar, contas a receber, extrato das contas, produtos comprados e estoque
+                      de produtos.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="nav-link test-free-modal" id="test-free-btn" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
+                    <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -196,10 +537,37 @@
           <p class="info3-section-4">usabilidade, tornando simples e intuitivo o processo.</p>
         </div>
         <div class="btn-place-section-4">
-          <div class="btn-section-4">
-            <h3 class="content-btn-section-4">Saiba mais</h3>
+
+            <button type="button" class="content-btn-section-4" data-toggle="modal" data-target="#modal-section-4">
+              <h3 class="btn-section-4">Saiba mais</h3>
+            </button>
+
+        </div>
+
+        <!-- Modal Section 4 -->
+        <div class="modal fade" id="modal-section-4" tabindex="-1" role="dialog" aria-labelledby="modal-section-4" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content modal-section-4">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">DOCUMENTOS FISCAIS</h5>
+              </div>
+              <div class="modal-body">
+                <p>A legislação tributária e fiscal brasileira é conhecida por ser bastante extensa e complexa, o que gera uma
+                  exacerbada burocracia na emissão de documentos fiscais, principalmente do ramo de empresas de transportes.</p>
+                <p>Além dessa complicação, há constantes atualizações sobre o tema. Uma delas é a criação do Sistema Público de
+                  Escrituração Digital (SPED) que torna eletrônica a emissão e declaração de diversas obrigações legais.</p>
+                <p>Essa mudança alterou o nome e a forma de emissão dos documentos fiscais pelas companhias e, apesar da
+                  informatização trazer melhorias, demanda que os empreendedores atualizem suas empresas e renovem seu conhecimento
+                  sobre o tema.</p>
+              </div>
+              <div class="modal-footer">
+                <a class="nav-link test-free-modal" id="test-free-btn" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
+                <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
       <div class="center-section-4">
         <img class="icon-notas-section-4" src="./assets/img/nota.png" alt="notas">
@@ -211,7 +579,7 @@
   </section>
 
   <section class="section-5">
-    <div class="content-section-5">
+    <div class="content-section-5 container">
       <div class="left-section-5"></div>
       <div class="right-section-5">
         <div class="info-section-5">
@@ -228,7 +596,7 @@
           <div class="img-info-section-5">
             <img class="icon-logo-section-5" src="./assets/img/icon_logo.png" alt="icon_logo">
             <div class="img-app">
-              <img class="img-app-section-5 appstore" src="./assets/img/appstore.png" alt="appstore">
+              <!--<img class="img-app-section-5 appstore" src="./assets/img/appstore.png" alt="appstore">-->
               <img class="img-app-section-5 googleplay" src="./assets/img/googleplay.png" alt="googleplay">
             </div>
           </div>
@@ -238,7 +606,7 @@
   </section>
 
   <section class="section-6">
-    <div class="content-section-6">
+    <div class="content-section-6 container">
       <div class="left-section-6">
         <div class="line1-section-6">
           <div class="left-line1-section-6">
@@ -306,15 +674,15 @@
           <p class="info3-section-6">ou médio porte, chegou a hora de inovar</p>
           <p class="info4-section-6">e gerenciar sua empresa de forma mais prática.</p>
         </div>
-        <div class="btn-section-6">
+        <a class="btn-section-6" href="https://blasterti.com/checkout-camaleao/" target="_blank">
           <h3>Confira já</h3><i class="fas fa-caret-right arrow-right-section-6"></i>
-        </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="section-7">
-    <div class="content-section-7">
+  <section class="section-7" id="section-7">
+    <div class="content-section-7 container">
       <div class="line1-section-7">
         <div class="title-section-7">
           <h3 class="title1-section-7">
@@ -349,13 +717,13 @@
           </div>
         </div>
         <div class="type-plan">
-          <div class="mounthly type-plan-section-7" id="mounthly" onclick="changePlan(0)">
+          <div class="mounthly type-plan-section-7" id="mounthly">
             <p class="info-mounthly txt-plan">MENSAL</p>
           </div>
-          <div class="yearly type-plan-section-7" id="yearly" onclick="changePlan(1)">
+          <div class="yearly type-plan-section-7" id="yearly">
             <p class="info-yearly txt-plan">ANUAL</p>
           </div>
-          <div class="semiannual type-plan-section-7" id="semiannual" onclick="changePlan(2)">
+          <div class="semiannual type-plan-section-7" id="semiannual">
             <p class="info-semiannual txt-plan">SEMESTRAL</p>
           </div>
         </div>
@@ -381,9 +749,9 @@
             <p>CONTROLE FINANCEIRO</p>
             <p>GESTÃO DE ESTOQUE</p>
             <p>SUPORTE INCLUSO</p>
-            <div class="accept-plan free-test">
+            <a class="accept-plan free-test" href="https://blasterti.com/checkout-camaleao/" target="_blank">
               <p>TESTAR GRÁTIS</p>
-            </div>
+            </a>
           </div>
           <div class="plan-yearly info-plan-section-7" id="plan-yearly" onclick="changePlan(1)">
             <h3>DIAMOND</h3>
@@ -408,9 +776,9 @@
             <p>SUPORTE INCLUSO</p>
             <p>50 NF-e</p>
             <p>200 NFC-e</p>
-            <div class="accept-plan">
+            <a class="accept-plan" href="https://blasterti.com/checkout-camaleao/" target="_blank">
               <p>ASSINAR DIAMOND</p>
-            </div>
+            </a>
           </div>
           <div class="plan-semiannual info-plan-section-7" id="plan-semiannual" onclick="changePlan(2)">
             <h3>GOLD</h3>
@@ -435,20 +803,20 @@
             <p>SUPORTE INCLUSO</p>
             <p>20 NF-e</p>
             <p>80 NFC-e</p>
-            <div class="accept-plan">
+            <a class="accept-plan"  href="https://blasterti.com/checkout-camaleao/" target="_blank">
               <p>ASSINAR GOLD</p>
-            </div>
+            </a>
           </div>
         </div>
-        <div class="btn-info-plan">
+        <a class="btn-info-plan" href="https://blasterti.com/checkout-camaleao/" target="_blank">
           <p>SAIBA MAIS SOBRE PLANOS E VALORES!</p>
-        </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="section-8">
-    <div class="content-section-8">
+  <!--<section class="section-8">
+    <div class="content-section-8 container">
       <div class="left-section-8">
         <div class="info-section-8">
           <h3>Um blog para</h3>
@@ -463,10 +831,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
-  <section class="section-9">
-    <div class="content-section-9">
+  <section class="section-9" id="section-9">
+    <div class="content-section-9 container">
       <div class="left-section-9">
         <div class="title-section-9">
           <h3>ESCLAREÇA SUAS</h3>
@@ -479,143 +847,126 @@
         </div>
       </div>
       <div class="right-section-9">
-        <form>
+        <form id="form">
           <div class="line1-form">
-            <input class="name-form input-form" type="text" placeholder="Seu Nome*">
-            <input class="email-form input-form" type="email" placeholder="Email*">
+            <input class="name-form input-form" id="name" name="name" type="text" placeholder="Seu Nome*">
+            <input class="email-form input-form" id="email" name="email" type="email" placeholder="Email*">
           </div>
           <div class="line2-form">
-            <input class="about-form input-form" type="text" placeholder="Sobre*">
+            <input class="name-form input-form" id="subject" name="subject" type="text" placeholder="Assunto*">
+            <input class="email-form input-form" id="tel" name="tel" type="text" placeholder="Telefone*">
           </div>
           <div class="line3-form">
-            <textarea class="message-form input-form" name="message-form" rows="4" cols="50" placeholder="Sua Mensagem*"></textarea>
+            <textarea class="message-form input-form" id="message" name="message-form" rows="4" cols="50" placeholder="Sua Mensagem*"></textarea>
           </div>
           <input type="submit" class="btn-form" value="ENVIAR">
         </form>
       </div>
     </div>
+
+    <!-- Success Toast -->
+    <div id="toast-success">
+      <div id="img"><img class="icon-success-toast" src="./assets/img/success.png" alt="success"></div>
+      <div id="desc-success"></div>
+    </div>
+
+    <!-- Warning Toast -->
+    <div id="toast-warning">
+      <div id="img"><img class="icon-warning-toast" src="./assets/img/warning.png" alt="warning"></div>
+      <div id="desc-warning"></div>
+    </div>
+
+    <!-- Error Toast -->
+    <div id="toast-error">
+      <div id="img"><img class="icon-error-toast" src="./assets/img/error.png" alt="error"></div>
+      <div id="desc-error"></div>
+    </div>
+
   </section>
 
   <footer class="footer">
-    <div class="content-footer">
+    <div class="content-footer container">
       <div class="column1">
         <img src="./assets/img/logo.png" alt="logo" class="logo-footer">
-        <p>Planos e preços</p>
-        <p>Experimente grátis</p>
-        <p>Segurança e privacidade</p>
-        <p>Termos de uso</p>
-        <p>API</p>
-        <h3>NOS SIGA NAS REDES SOCIAIS</h3>
+        <a href="https://blasterti.com/checkout-camaleao/" target="_blank" class="column-1-footer">Planos e preços</a>
+        <a href="https://blasterti.com/checkout-camaleao/" target="_blank" class="column-1-footer">Experimente grátis</a>
+        <p class="column-1-footer-p">Segurança e privacidade</p>
+        <p class="column-1-footer-p">API</p>
+        <button type="button" class="terms-btn" data-toggle="modal" data-target="#terms">Termos de uso</button>
+        <h3 class="column-1-title-footer">NOS SIGA NAS REDES SOCIAIS</h3>
         <div class="social">
-          <img src="./assets/img/facebook.png" alt="facebook" class="facebook-footer">
-          <img src="./assets/img/twitter.png" alt="twitter" class="twitter-footer">
-          <img src="./assets/img/ball.png" alt="ball" class="ball-footer">
-          <img src="./assets/img/instagram.png" alt="instagram" class="instagram-footer">
+          <a href="#"><img class="socialMidia" src="./assets/img/facebook.png" alt="facebook"></a>
+          <a href="#"><img class="socialMidia youtube-footer" src="./assets/img/youtube.png" alt="youtube"></a>
+          <a href="#"><img class="socialMidiaLast" src="./assets/img/instagram.png" alt="instagram"></a>
         </div>
       </div>
+
+      <!-- Modal Termos De Uso -->
+      <div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="modal-section-4" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-section-4">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">TERMOS DE USO</h5>
+              <img class="icon-modal-2 icon-sell" src="./assets/img/terms.png" alt="termosDeUso">
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Morbi non arcu risus quis. Ut lectus arcu bibendum at. Ut consequat semper viverra nam
+                libero. Eget sit amet tellus cras adipiscing. Integer malesuada nunc vel risus commodo viverra. Semper quis lectus
+                nulla at volutpat diam ut. Posuere ac ut consequat semper. Mollis nunc sed id semper risus in. Quis ipsum suspendisse
+                ultrices gravida dictum fusce. Sagittis id consectetur purus ut faucibus pulvinar. Velit laoreet id donec ultrices
+                tincidunt arcu non. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Sed libero enim sed faucibus turpis
+                in. Magna etiam tempor orci eu lobortis elementum. Nisl condimentum id venenatis a condimentum. Sed cras ornare arcu
+                dui vivamus arcu felis bibendum ut. Quam viverra orci sagittis eu volutpat odio. Nibh tortor id aliquet lectus proin
+                nibh nisl. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque.</p>
+            </div>
+            <div class="modal-footer">
+              <a class="nav-link test-free-modal" id="test-free-btn" href="https://blasterti.com/checkout-camaleao/" target="_blank">Teste Grátis</a>
+              <button type="button" class="btn btn-modal-section-2" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="column2">
-        <h3>AJUDA E SUPORTE</h3>
-        <p>Contato</p>
-        <p>Central de ajuda</p>
-        <p>Seja um parceiro</p>
+        <h3 class="column-2-title-footer">AJUDA E <br>SUPORTE</h3>
+        <p class="column-2-footer" onclick="scrollToSection('#section-9')">Contato</p>
+        <a href="https://blaster.movidesk.com/kb" target="_blank" class="column-2-footer">Central de ajuda</a>
+        <a href="https://blasterti.com/checkout-camaleao/" target="_blank" class="column-2-footer">Seja um parceiro</a>
       </div>
       <div class="column3">
-        <h3>TOUR</h3>
-        <p>Nota Fiscal</p>
-        <p>Estoque</p>
-        <p>Vendas</p>
-        <p>Frente De Caixa</p>
-        <p>Integração E-commerce</p>
-        <p>Serviços</p>
-        <p>Finanças</p>
-        <p>Cadastros</p>
-        <p>Integração Correios</p>
-        <p>Boleto com registro</p>
+        <h3 class="column-3-title-footer">TOUR</h3>
+        <a href="https://blaster.movidesk.com/kb/article/158226/nf-e" target="_blank" class="column-3-footer">Nota Fiscal</a>
+        <a href="https://blaster.movidesk.com/kb/article/158001/entradas-mercadorias-compra" target="_blank" class="column-3-footer">Estoque</a>
+        <a href="https://blaster.movidesk.com/kb/article/158006/vendas?menuId=17991-48941-158006&ticketId=&q=" target="_blank" class="column-3-footer">Vendas</a>
+        <a href="https://blaster.movidesk.com/kb/article/158006/vendas" target="_blank" class="column-3-footer">Frente De Caixa</a>
+        <a href="https://blaster.movidesk.com/kb/article/158294/certificado?menuId=17985-48979-158294&ticketId=&q=" target="_blank" class="column-3-footer">Serviços</a>
+        <a href="#" target="_blank" class="column-3-footer">Finanças</a>
+        <a href="https://blaster.movidesk.com/kb/article/153945/cadastro?menuId=17959-48930-153945&ticketId=&q=" target="_blank" class="column-3-footer">Cadastros</a>
       </div>
       <div class="column4">
-        <h3>CATEGORIAS</h3>
-        <p>MEI</p>
-        <p>ERP</p>
-        <p>E-commerce</p>
-        <p>Fiscal e Tributário</p>
-        <p>Controle Financeiro</p>
-        <p>Gestão Empresarial</p>
-        <p>Conheça o Camaleão</p>
-        <p>Marketing e Vendas</p>
+        <h3 class="column-4-title-footer">CATEGORIAS</h3>
+        <p class="column-4-footer">MEI</p>
+        <p class="column-4-footer">ERP</p>
+        <p class="column-4-footer">E-commerce</p>
+        <p class="column-4-footer">Fiscal e Tributário</p>
+        <p class="column-4-footer">Controle Financeiro</p>
+        <p class="column-4-footer">Gestão Empresarial</p>
+        <a href="https://blasterti.com/checkout-camaleao/" target="_blank" class="column-4-footer">Conheça o Camaleão</a>
+        <p class="column-4-footer">Marketing e Vendas</p>
       </div>
     </div>
   </footer>
 
-  <script src="./assets/js/video-intro.js">
-    < script src = "./assets/js/script.js" >
-  </script>
-  <script src="./assets/js/all.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script>
-    // This code loads the IFrame Player API code asynchronously.
-    var tag = document.createElement('script');
-
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // This function creates an <iframe> (and YouTube player)
-    // after the API code downloads.
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: 'am_s_0EBbGw',
-        events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-      }
-      });
-    }
-
-      // The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // The API calls this function when the player's state changes.
-      // The function indicates that when playing a video (state=1),
-      // the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          done = true;
-        }else {
-          done = false;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-
-      $(window).on('scroll', function() {
-        "use strict";
-        var b = $(window).scrollTop();
-        if( b > 72 && done == true){
-          $("#player").addClass("video-fixed");
-          $("#close-video").addClass("close-video");
-          $("#close-video").removeClass("hide-close-btn");
-          }else if(b == 0) {
-          $("#close-video").addClass("hide-close-btn");
-          $("#player").removeClass("video-fixed");
-          $("#close-video").removeClass("close-video");
-        }
-      });
-
-      function closeVideo() {
-        this.stopVideo();
-        done = false;
-        $("#player").removeClass("video-fixed");
-        $("#close-video").removeClass("close-video");
-      }
-
-      </script>
+  <script src="./assets/js/video-intro.js"></script>
+  <script src ="./assets/js/script.js"></script>
+  <script src="./assets/js/all.min.js"></script>
+  <script src="./assets/js/tickets.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>

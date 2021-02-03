@@ -19,8 +19,9 @@
 }
 
 .left-section-4 {
-  margin: -1rem 0 0 3.5rem;
+  margin: -1rem 0 0 12rem;
   padding-right: 6rem;
+  z-index: 9999;
 }
 
 .title1-section-4, .title2-section-4 {
@@ -45,7 +46,11 @@
   margin-bottom: 3rem;
 }
 
-.btn-section-4 {
+.content-btn-section-4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: .3rem 1.7rem 0 0;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,19 +61,26 @@
   border-radius: 20px;
   padding-top: .2rem;
   transition: .6s;
-}
-
-.content-btn-section-4 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin: -.1rem 1.7rem 0 1.8rem;
-  color: #000;
-  transition: .6s;
-}
-
-.btn-section-4:hover {
   cursor: pointer;
+}
+
+.content-btn-section-4:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.content-btn-section-4 > h3 {
+  transition: .6s;
+  margin-top: .3rem;
+  font-size: 1.3rem;
+}
+
+.content-btn-section-4:hover {
   background-color: var(--primary-color);
+}
+
+.content-btn-section-4:hover .btn-section-4 {
+  color: #000;
 }
 
 .center-section-4 {
@@ -76,7 +88,7 @@
   align-items: center;
   flex-direction: row;
   padding-left: 6rem;
-  margin-top: -2rem;
+  margin: -2rem 0 0 -6rem;
 }
 
 .icon-notas-section-4 {
@@ -95,17 +107,41 @@
 
 .icon-logo-section-4 {
   position: relative;
-  top: -18rem;
+  top: -13.5rem;
+  height: 24rem;
+  width: 22rem;
+}
+
+@media (max-width: 1350px) {
+
+  .right-section-4 {
+    display: none;
+  }
+
 }
 
 @media (max-width: 1130px) {
 
   .section-4 {
-    height: 33rem;
+    height: 34rem;
   }
 
   .content-section-4 {
     flex-direction: column;
+  }
+
+  .btn-place-section-4 {
+    display: flex!important;
+    justify-content: flex-end!important;
+    align-items: center!important;
+  }
+
+  .btn-section-4 {
+    margin-bottom: .5rem;
+  }
+
+  .content-btn-section-4 {
+    margin: 0 0 1.5rem 0;
   }
 
   .left-section-4 {
@@ -119,8 +155,9 @@
 
   .center-section-4 {
     flex-direction: column;
-    padding: 0;
-    margin-top: 2rem;
+    justify-content: center;
+    padding: 1rem 0 3rem 0;
+    margin: 2.5rem 0 0 0;
   }
 
   .icon-notas-section-4 {
@@ -143,6 +180,10 @@
 
   .icon-notas-section-4 {
     margin-top: -.5rem;
+  }
+
+  .center-section-4 {
+    margin: 0;
   }
 
 }

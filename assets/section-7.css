@@ -1,5 +1,6 @@
 .section-7 {
   height: 55rem;
+  background-color: #fff;
 }
 
 .content-section-7 {
@@ -8,7 +9,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fff;
 }
 
 .line1-section-7 {
@@ -126,15 +126,18 @@
 
 .cifrao > p {
   font-size: 2.5rem;
+  color: #000!important;
 }
 
 .cents-value > p {
   font-size: 1.8rem;
+  color: #000!important;
 }
 
 .integer-value > p {
   font-size: 4.5rem;
   font-weight: 600;
+  color: #000!important;
 }
 
 .info-plan-section-7 > h3 {
@@ -178,6 +181,7 @@
 .accept-plan:hover {
   cursor: pointer;
   color: #000!important;
+  text-decoration: none;
 }
 
 .accept-plan:hover > p {
@@ -192,6 +196,7 @@
   text-align: center;
   margin-top: 3rem;
   transition: .6s;
+  text-decoration: none!important;
 }
 
 .btn-info-plan > p {
@@ -214,6 +219,10 @@
 
   .title-section-7, .info-section-7, .line1-info-section-7, .line2-info-section-7 {
     flex-direction: column!important;
+  }
+
+  .title-right-section-6 {
+    text-align: center;
   }
 
   .title1-section-7, .title2-section-7 {

@@ -38,7 +38,7 @@ function stopVideo() {
   player.stopVideo();
 }
 
-$(window).on('scroll', function() {
+window.onscroll = function() {
     "use strict";
     var b = $(window).scrollTop();
     if( b > 72 && done == true){
@@ -50,7 +50,15 @@ $(window).on('scroll', function() {
         $("#player").removeClass("video-fixed");
         $("#close-video").removeClass("close-video");
     }
-});
+    var backButton = $(window).scrollTop();
+    if( backButton > 72){
+        $("#topButton").addClass("topButton");
+        $("#topButton").removeClass("hide-up-button");
+    }else if(backButton == 0) {
+      $("#topButton").addClass("hide-up-button");
+      $("#topButton").removeClass("topButton");
+    }
+};
 
 function closeVideo() {
     this.stopVideo();

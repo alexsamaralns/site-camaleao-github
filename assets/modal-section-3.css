@@ -1,0 +1,7 @@
+.modal {
+  z-index: 9999999;
+}
+
+.modal-section-3 {
+  background-color: var(--primary-color);
+}

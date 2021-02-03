@@ -1,13 +1,13 @@
 .section-8 {
   height: 45rem;
-}
-
-.content-section-8 {
-  height: 100%;
   background-position: center;
   background-size: cover;
   background-image: url(../assets/img/fundo4.png);
   background-repeat: no-repeat;
+}
+
+.content-section-8 {
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -73,13 +73,16 @@
 @media (max-width: 990px) {
 
   .content-section-8 {
+    width: auto;
+    height: auto;
     justify-content: center;
-    background-image: url(../assets/img/fundo4mobile.png);
   }
 
   .left-section-8 {
     justify-content: center;
-    margin: 4rem 0 0 0;
+    align-items: center;
+    margin: 20rem 0 0 0;
+    width: 50rem;
   }
 
   .info-section-8 {
@@ -87,8 +90,17 @@
     align-items: center;
   }
 
+  .info-section-8 > h3 {
+    font-size: 2rem;
+  }
+
   .btn-blog {
     margin-top: 4rem;
+    color: #000;
+  }
+
+  .btn-blog > p {
+    color: #000;
   }
 
   .icon-logo-section-8 {

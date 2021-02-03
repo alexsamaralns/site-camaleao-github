@@ -1,9 +1,25 @@
+var mounthly = document.getElementById('mounthly');
+var yearly = document.getElementById('yearly');
+var semiannual = document.getElementById('semiannual');
+
 document.getElementById('mounthly').style.backgroundColor = "transparent";
 document.getElementById('mounthly').style.fontWeight = "400";
 document.getElementById('yearly').style.backgroundColor = "var(--primary-color)";
 document.getElementById('yearly').style.fontWeight = "600";
 document.getElementById('semiannual').style.backgroundColor = "transparent";
 document.getElementById('semiannual').style.fontWeight = "400";
+
+mounthly.addEventListener('click', function() {
+  changePlan(0);
+})
+
+yearly.addEventListener('click', function() {
+  changePlan(1);
+})
+
+semiannual.addEventListener('click', function() {
+  changePlan(2);
+})
 
 function changePlan(plan) {
     if(plan == 0) {
@@ -53,3 +69,29 @@ function changePlan(plan) {
       document.getElementById('gold-month').innerHTML = "6 MESES";
     }
 }
+
+function scrollToSection(idSection) {
+  const section = document.querySelector(idSection);
+  let difference = 0;
+  var width = screen.width;
+  if((idSection == "#section-2" || idSection == "#section-9") && width > 990) {
+      difference = 100;
+  }
+  window.scroll({
+    top: section.offsetTop - difference,
+    behavior: "smooth"
+  });
+}
+
+var btnTestFree = document.getElementById('test-free-btn');
+
+function shake() {
+  setInterval(function(){
+    btnTestFree.classList.add("animate__shakeX");
+    setTimeout(function() {
+      btnTestFree.classList.remove("animate__shakeX");
+    }, 1000);
+  }, 5000);
+}
+
+shake();
