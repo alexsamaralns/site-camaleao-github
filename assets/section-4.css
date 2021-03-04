@@ -105,9 +105,17 @@
   height: 100%;
 }
 
-.icon-logo-section-4 {
+/*.icon-logo-section-4 {
   position: relative;
   top: -13.5rem;
+  height: 24rem;
+  width: 22rem;
+}*/
+
+.icon-logo-section-4 {
+  position: relative;
+  left: 5rem;
+  top: -13rem;
   height: 24rem;
   width: 22rem;
 }

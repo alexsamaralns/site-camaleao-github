@@ -20,9 +20,14 @@ body {
   height: 5rem;
 }
 
-.logo-navbar {
+/*.logo-navbar {
   height: 3.8rem;
   width: 3.3rem;
+}*/
+
+.logo-navbar {
+  height: 3rem;
+  width: 2.8rem;
 }
 
 .nav-link {
