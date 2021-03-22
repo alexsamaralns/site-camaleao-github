@@ -82,6 +82,7 @@ function scrollToSection(idSection) {
     behavior: "smooth"
   });
 }
+<<<<<<< HEAD
 
 var btnTestFree = document.getElementById('test-free-btn');
 
@@ -95,3 +96,5 @@ function shake() {
 }
 
 shake();
+=======
+>>>>>>> 352e58c6d5f97c6b84eec65dd47f2f073f9cbadf

@@ -114,8 +114,12 @@
 
 .icon-logo-section-4 {
   position: relative;
+<<<<<<< HEAD
   left: 5rem;
   top: -13rem;
+=======
+  top: -13.5rem;
+>>>>>>> 352e58c6d5f97c6b84eec65dd47f2f073f9cbadf
   height: 24rem;
   width: 22rem;
 }
@@ -163,9 +167,14 @@
 
   .center-section-4 {
     flex-direction: column;
+<<<<<<< HEAD
     justify-content: center;
     padding: 1rem 0 3rem 0;
     margin: 2.5rem 0 0 0;
+=======
+    padding: 1rem 0 3rem 0;
+    margin-top: 2.5rem;
+>>>>>>> 352e58c6d5f97c6b84eec65dd47f2f073f9cbadf
   }
 
   .icon-notas-section-4 {
