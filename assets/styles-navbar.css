@@ -25,14 +25,11 @@ body {
   width: 3.3rem;
 }*/
 
-<<<<<<< HEAD
 .logo-navbar {
   height: 3rem;
   width: 2.8rem;
 }
 
-=======
->>>>>>> 352e58c6d5f97c6b84eec65dd47f2f073f9cbadf
 .nav-link {
   font-size: 1.35rem;
   color: #fff!important;
@@ -88,29 +85,6 @@ body {
   animation: shakeX;
   animation-duration: 1.2s;
   animation-iteration-count: infinite;
-}
-
-.hide-up-button {
-  display: none;
-}
-
-.topButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 20px;
-  background-color: var(--primary-color);
-  bottom: 1rem;
-  right: 1rem;
-  box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.75);
-  z-index: 9999;
-}
-
-.topButton:hover {
-  cursor: pointer;
 }
 
 .hide-up-button {
