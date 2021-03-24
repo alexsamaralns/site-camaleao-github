@@ -98,6 +98,27 @@
   color: #000;
 }
 
+.whatsapp-contact {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.whatsapp-logo {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.whatsapp-contact p {
+  color: #fff;
+  margin: 0 0 0 1rem;
+  font-weight: 600;
+}
+
 @media (max-width: 1220px) {
 
   .left-section-9 {
@@ -155,6 +176,10 @@
 
   .btn-form {
     margin-bottom: 5rem;
+  }
+
+  .whatsapp-contact {
+    justify-content: center;
   }
 
 }
